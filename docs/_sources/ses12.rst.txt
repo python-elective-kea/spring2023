@@ -24,7 +24,7 @@ Materials
 
 
 * `Google job interview <https://www.youtube.com/watch?v=XKu_SEDAykw>`_
-* `Code examples from teachings <https://github.com/python-elective-kea/spring2021-code-examples-from-teachings/tree/main/ses12>`_
+* `Code examples from teachings <https://github.com/python-elective-kea/fall2021-code-examples-from-teachings/tree/main/ses12>`_
 
 Exercises
 ---------

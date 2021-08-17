@@ -46,7 +46,7 @@ Run the following command in your termianl to download the image and run a conta
 ````
 With:   
 
-* ** -it **: you specify to run the container in interactive mode (you can use its terminal).
+* <b>-it</b>: you specify to run the container in interactive mode (you can use its terminal).
 * ** --rm **: you specify that the container should be deleted when you exit the terminal.
 * ** ubuntu ** : is the name of the image
  
@@ -73,10 +73,14 @@ Run the following command in your termianl to download the image and run a conta
 
 With:   
 
-* ** -it **: you specify to run the container in interactive mode (you can use its terminal).
-* ** --rm **: you specify that the container should be deleted when you exit the terminal.
-* ** python **: is the name of the image.
-* ** bash **: specifies that you want to start the container with a terminal gui (bash) 
+* -it:  
+	* you specify to run the container in interactive mode (you can use its terminal).
+* --rm: 
+	* you specify that the container should be deleted when you exit the terminal.
+* python: 
+	* is the name of the image.
+* bash: 
+	* specifies that you want to start the container with a terminal gui (bash) 
 
 After downloading has finnished, and run has executed you should see something like this in your terminal.
 

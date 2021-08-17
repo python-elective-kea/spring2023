@@ -18,7 +18,7 @@ The exam consist of 2 elements:
 Hand-in a synopsis:
 *******************
 
-Some weeks before the oral examination you should hand in a synopsis on wiseflow. if you fail to do so, you will not be able to attend the oral exam. The synopsis should follow these requirements:
+Some weeks before the oral examination you should hand in a synopsis on wiseflow. If you fail to do so, you will not be able to attend the oral exam. The synopsis should follow these requirements:
 
 * One A4 page (all topics should be on one page!)
 * Give a short overview of what you will present at your exam.
@@ -26,8 +26,8 @@ Some weeks before the oral examination you should hand in a synopsis on wiseflow
 Oral exam:
 **********
 
-* 4 topics, where you pick a topic at the beginning of the examination.  
-* Create a 10 minutes presentation and code examples for each topic.
+* Prior to the exam you should have prepared a 10 minutes presentation for the 4 topics. At the beginnig of the examination you then randomly pick a topic to focus on for your examination.
+* Do a 10 minutes presentation with code examples for the picked topic.
 * After your presentation 15 minutes examination within this topic and other related topics.
 
 -----------
@@ -37,8 +37,6 @@ Exam Topics
 At your exam you should demonstrate to wich extend you fullfill the learning goals of this elective. 
 This you should do through demonstrating your knowlege, skills and competencies within these topics. 
 
-Topics will be listed here later this semester.
- 
         * Data Structures & functions
         * Pythonic OOP
         * Generators, Decorators & Context Managers

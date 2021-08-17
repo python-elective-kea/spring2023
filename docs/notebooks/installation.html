@@ -235,7 +235,7 @@
 </div>
 <p>With:</p>
 <ul class="simple">
-<li><p>** -it **: you specify to run the container in interactive mode (you can use its terminal).</p></li>
+<li><p><b>-it</b>: you specify to run the container in interactive mode (you can use its terminal).</p></li>
 <li><p>** –rm **: you specify that the container should be deleted when you exit the terminal.</p></li>
 <li><p>** ubuntu ** : is the name of the image</p></li>
 </ul>
@@ -255,10 +255,26 @@
 </div>
 <p>With:</p>
 <ul class="simple">
-<li><p>** -it **: you specify to run the container in interactive mode (you can use its terminal).</p></li>
-<li><p>** –rm **: you specify that the container should be deleted when you exit the terminal.</p></li>
-<li><p>** python **: is the name of the image.</p></li>
-<li><p>** bash **: specifies that you want to start the container with a terminal gui (bash)</p></li>
+<li><p>-it:</p>
+<ul>
+<li><p>you specify to run the container in interactive mode (you can use its terminal).</p></li>
+</ul>
+</li>
+<li><p>–rm:</p>
+<ul>
+<li><p>you specify that the container should be deleted when you exit the terminal.</p></li>
+</ul>
+</li>
+<li><p>python:</p>
+<ul>
+<li><p>is the name of the image.</p></li>
+</ul>
+</li>
+<li><p>bash:</p>
+<ul>
+<li><p>specifies that you want to start the container with a terminal gui (bash)</p></li>
+</ul>
+</li>
 </ul>
 <p>After downloading has finnished, and run has executed you should see something like this in your terminal.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>	$ docker run -it --rm python bash

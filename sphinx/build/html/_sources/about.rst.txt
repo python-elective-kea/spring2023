@@ -1,7 +1,7 @@
 About this elective
 ===================
 
-This elective is one of the 3 you have chosen on your 4th semester computer science education. Its aim is make you a better and a more clear thinking programmer, and therefore this electives focus are on low level programming. 
+This elective is one of the 3 you have chosen on your 4th semester computer science education. Its aim is make you a better and a more clear thinking programmer, and therefore this electives focus are on low level programming, and algorithmic thinking. 
 
 Teaching plan
 ------------
@@ -34,16 +34,10 @@ The sessions are 3 hours long and will primarely follow this pattern:
         * - 50 min   
           - Introduktion to todays topic
         * - 1,5 hour  
-          - Study groups (Claus will jump in and out of your rooms)
+          - Exercises and Study groups
         * - 30 min 
-          - Follow up and Godbuy
+          - Follow up and Goodbuy
 
-Online Teachings
-----------------
-In this semster we will (probably) only have online teaching sessions. 
-You will be informed if this will change. 
-
-Online teachings will always be on **Teams**.
 
 
 Software Needed for the Course

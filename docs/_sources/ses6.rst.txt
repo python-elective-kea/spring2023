@@ -3,7 +3,7 @@ Session 6 - OOP
 
 .. note:: Homework
    
-   Before this class you should have read and understood this text `Object-Oriented Programming (OOP) in Python 3 <https://realpython.com/python3-object-oriented-programming/>`_. These are basic OOP concepts, which you have already woorked with in the forst part of your education. You just need to be up to date with how this is done, and how the syntax is done in python.
+   Before this class you should have read and understood this text `Object-Oriented Programming (OOP) in Python 3 <https://realpython.com/python3-object-oriented-programming/>`_. These are basic OOP concepts, which you have already woorked with in the first part of your education. You just need to be up to date with how this is done, and how the syntax is done in python.
 
 Today we will work with the basics of Object oriented programming in python. 
 
@@ -21,12 +21,7 @@ Materials
 * `Object-Oriented Programming (OOP) in Python 3 <https://realpython.com/python3-object-oriented-programming/>`_
 * `Python args and kwargs: Demystified <https://realpython.com/python-kwargs-and-args/>`_
 * `Notebook on classes <notebooks/class_notes.ipynb>`_
-* `Code examples from teachings <https://github.com/python-elective-kea/spring2021-code-examples-from-teachings/tree/master/ses6>`_
-
-.. * `Video on when not to use classes <>`_
-        * Article on when to and not to use classes.
-        * Example on classes with 2 methods, and one is __init__
-        * Refactor example into a function instead
+* `Code examples from teachings <https://github.com/python-elective-kea/fall2021-code-examples-from-teachings/tree/master/ses6>`_
 
 
 Exercises
