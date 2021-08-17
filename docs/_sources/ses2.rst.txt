@@ -36,6 +36,7 @@ Exercises
 Ex 0.1: Slicing
 ---------------
 
+
 `Solution <exercises/solution/02_lists/sorted_exercises.rst>`_
 
 By using the slicing syntax change the following collections.
