@@ -21,7 +21,7 @@ If you want to work with the source files
 
 ````
 
-$ docker run --rm -v /path/to/document:/docs sphinxdoc/sphinx make htm
+$ docker run --rm -v /path/to/document:/docs sphinxdoc/sphinx make html
 
 ````
 
