@@ -1,2 +1,2 @@
-Session 16 - Functools
-======================
+Session 16 - Exam preperation
+=============================
