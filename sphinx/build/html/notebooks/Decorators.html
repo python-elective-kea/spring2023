@@ -430,27 +430,40 @@ div.rendered_html tbody tr:hover {
 <div class="section" id="First-class-functions">
 <h2>First class functions<a class="headerlink" href="#First-class-functions" title="Permalink to this headline">¶</a></h2>
 <p>In python functions are first class functions, meanning that they can take other functions as parameters and they can return functions.</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>def my_first_class_function(func):
+<span></span>def my_first_class_function(x):
     # execute
-    print(func())
+    print(x())
 
     # or return
-    return func
-
-def greet():
-    return &#39;Hello&#39;
-
-
-my_first_class_function(greet)
+    return x
 </pre></div>
 </div>
 </div>
-<div class="nboutput docutils container">
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>def greet():
+    return &#39;Hello&#39;
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>x = my_first_class_function(greet)
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
@@ -458,20 +471,29 @@ my_first_class_function(greet)
 Hello
 </pre></div></div>
 </div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>x()
+</pre></div>
+</div>
+</div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;function __main__.greet()&gt;
+&#39;Hello&#39;
 </pre></div></div>
 </div>
 </div>
 <div class="section" id="Inner-functions">
 <h2>Inner functions<a class="headerlink" href="#Inner-functions" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -496,6 +518,15 @@ foo()
 Inner msg
 </pre></div></div>
 </div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>
+</pre></div>
+</div>
+</div>
 <p>I do not have access to the inner function from out side</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
@@ -505,40 +536,43 @@ Inner msg
 <span></span># inner()
 # foo.inner()
 # foo().inner()
+# foo(inner())
 </pre></div>
 </div>
 </div>
 <p>I can return the inner function and use it out side</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span>def foo():
     def inner():
-        return &#39;Hello inner&#39;
+        return &#39;Hello inner xxx&#39;
 
     return inner
 
 i = foo()
 i()
+
+
 </pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&#39;Hello inner&#39;
+&#39;Hello inner xxx&#39;
 </pre></div></div>
 </div>
 </div>
 <div class="section" id="Simple-Decorators">
 <h2>Simple Decorators<a class="headerlink" href="#Simple-Decorators" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -546,7 +580,7 @@ i()
     def wrapper():
         print(&quot;Something is happening before the function is called.&quot;)
         func()  # print(Hello)
-        print(&quot;Something is happening after the function is called.&quot;)
+        print(&quot;XXXXX   Something is happening after the function is called.&quot;)
     return wrapper
 
 def greet():
@@ -564,13 +598,13 @@ greet()
 <div class="highlight"><pre>
 Something is happening before the function is called.
 Hello
-Something is happening after the function is called.
+XXXXX   Something is happening after the function is called.
 </pre></div></div>
 </div>
 <div class="section" id="Syntactic-Sugar!">
 <h3>Syntactic Sugar!<a class="headerlink" href="#Syntactic-Sugar!" title="Permalink to this headline">¶</a></h3>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -589,7 +623,7 @@ greet()
 <div class="highlight"><pre>
 Something is happening before the function is called.
 Hello
-Something is happening after the function is called.
+XXXXX   Something is happening after the function is called.
 </pre></div></div>
 </div>
 </div>
@@ -597,45 +631,11 @@ Something is happening after the function is called.
 <div class="section" id="Decorating-Functions-With-Arguments">
 <h2>Decorating Functions With Arguments<a class="headerlink" href="#Decorating-Functions-With-Arguments" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span>@my_decorator
-def greet(name):
-    print(f&#39;Hello {name}&#39;)
-greet(&#39;Clais&#39;)
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-17-4b21743828db&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">      2</span> <span class="ansi-green-fg">def</span> greet<span class="ansi-blue-fg">(</span>name<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span>     print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">f&#39;Hello {name}&#39;</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">----&gt; 4</span><span class="ansi-red-fg"> </span>greet<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;Clais&#39;</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">TypeError</span>: wrapper() takes 0 positional arguments but 1 was given
-</pre></div></div>
-</div>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>def my_decorator(func):
-    def wrapper(*args):
-        print(&quot;Something is happening before the function is called.&quot;)
-        func(*args)  # print(Hello)
-        print(&quot;Something is happening after the function is called.&quot;)
-    return wrapper
-
-@my_decorator
 def greet(name):
     print(f&#39;Hello {name}&#39;)
 greet(&#39;Clais&#39;)
@@ -652,11 +652,40 @@ Hello Clais
 Something is happening after the function is called.
 </pre></div></div>
 </div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>def my_decorator(func):
+    def wrapper(*args):
+        print(&quot;Something is happening before the function is called.&quot;)
+        func(*args)  # print(Hello)
+        print(&quot;Something is happening after the function is called.&quot;)
+    return wrapper
+
+@my_decorator
+def greet(name):
+    print(f&#39;Hello {name}&#39;)
+greet(&#39;Fin&#39;)
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Something is happening before the function is called.
+Hello Fin
+Something is happening after the function is called.
+</pre></div></div>
+</div>
 </div>
 <div class="section" id="Returning-Values-From-Decorated-Functions">
 <h2>Returning Values From Decorated Functions<a class="headerlink" href="#Returning-Values-From-Decorated-Functions" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -672,17 +701,17 @@ Something is happening after the function is called.
 def greet(name):
     return f&#39;Hello {name}&#39;
 
-greet(&#39;Clais&#39;)
+greet(&#39;Clais kjshhgfgkjshsfdkj&#39;)
 </pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&#39;From wrapper before: Hello Clais : after from wrapper&#39;
+&#39;From wrapper before: Hello Clais kjshhgfgkjshsfdkj : after from wrapper&#39;
 </pre></div></div>
 </div>
 <div class="nbinput nblast docutils container">
