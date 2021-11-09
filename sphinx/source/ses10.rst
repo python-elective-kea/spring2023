@@ -63,7 +63,7 @@ Exercises
 ex1:  Python Students
 ---------------------
 
-`Solution <exercises/solution/09_generators/solutions>`_
+`Solution <exercises/solution/09_generators/solutions.rst>`_
 
 Based on the Student class below, create a PythonStudents class that acts as a collection of students. 
 The class should implement the iterations functionality (iter() and next()) 
@@ -109,7 +109,7 @@ in the list.
 ex2: School of students
 -----------------------
 
-`Solution <exercises/solution/09_generators/solutions>`_
+`Solution <exercises/solution/09_generators/solutions.rst>`_
 
 In this exercise you start out by having a list of names, and a list of majors.
     
@@ -150,7 +150,7 @@ Both functions should do the same, but one returns a list and one a generator ob
 ex3: Range Mimic
 ----------------
 
-`Solution <exercises/solution/09_generators/solutions>`_
+`Solution <exercises/solution/09_generators/solutions.rst>`_
 
 1. Create a "clone" of the build in range() function, by doing an iterator class. Besides implementing the protocol for beeing iterable, this class should also be callable in order for it to be used like this.  
 
