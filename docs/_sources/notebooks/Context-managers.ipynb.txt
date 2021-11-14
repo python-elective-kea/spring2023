@@ -2,6 +2,319 @@
  "cells": [
   {
    "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "\n",
+    "# Coroutines (generators)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "This is a commond way to program.    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class Api:\n",
+    "    def do_this_first(self):\n",
+    "        pass\n",
+    "    def do_this_second(self):\n",
+    "        pass\n",
+    "    def do_this_third(self):\n",
+    "        pass\n",
+    "    def run():\n",
+    "        do_this_first()\n",
+    "        do_this_second()\n",
+    "        do_this_third()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "the second method is dependant of the first, and third on the second.    \n",
+    "\n",
+    "But what happens if we call second() first? \n",
+    "\n",
+    "It could be solved by calling the **run** method, but then you are not able to interact with the code in between the calls. Since it is programmed in the 3 step way it is probably intended to to work in steps.     \n",
+    "\n",
+    "This code runs all the way through and give you the result wich you then can use.    \n",
+    "This is called a Routine / Subroutine pattern.      "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Often it can be good to use what is called a coroutine pattern. \n",
+    "\n",
+    "You get a result from a function, use it for some small task, get the next piece of code, use it and so on.     \n",
+    "\n",
+    "**Generators** a perfect for this kind of style.    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def api():\n",
+    "    yield 'do_this_first'\n",
+    "    yield 'do_this_second'\n",
+    "    yield 'do_this_third'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "<generator object api at 0x7feb3005cdd0>"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x = api()\n",
+    "x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Ill do_this_first and then think a bit, then call next again\n",
+      "Ill do_this_second and then jump around a bit, and then call next again\n",
+      "Ill do_this_third and then end my quest!\n"
+     ]
+    }
+   ],
+   "source": [
+    "fi = next(x)\n",
+    "print(f'Ill {fi} and then think a bit, then call next again')\n",
+    "se = next(x)\n",
+    "print(f'Ill {se} and then jump around a bit, and then call next again')\n",
+    "th = next(x)\n",
+    "print(f'Ill {th} and then end my quest!')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Send information back to the coroutine with send()\n",
+    "By using **.send()** you can send data back to the generator.   "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def simple_coroutine():\n",
+    "    print('-> coroutine started')\n",
+    "    x=yield\n",
+    "    print('-> coroutine received:', x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "<generator object simple_coroutine at 0x7feb32c5e7b0>"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_coro = simple_coroutine()\n",
+    "my_coro"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "-> coroutine started\n"
+     ]
+    }
+   ],
+   "source": [
+    "next(my_coro)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "-> coroutine received: 42\n"
+     ]
+    },
+    {
+     "ename": "StopIteration",
+     "evalue": "",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mStopIteration\u001b[0m                             Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-16-7c96f97a77cb>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mmy_coro\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msend\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m42\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;31mStopIteration\u001b[0m: "
+     ]
+    }
+   ],
+   "source": [
+    "my_coro.send(42)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "You can stop a couroutine with the .close() method."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 57,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def api():\n",
+    "    x = 1\n",
+    "    while True:\n",
+    "        x = yield f'do_this_{x}'\n",
+    "    return 'stop'  \n",
+    "x = api()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'do_this_1'"
+      ]
+     },
+     "execution_count": 58,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "next(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 59,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'do_this_13'"
+      ]
+     },
+     "execution_count": 59,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x.send(13)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'do_this_Hello'"
+      ]
+     },
+     "execution_count": 60,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x.send('Hello')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x.close()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "StopIteration",
+     "evalue": "",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mStopIteration\u001b[0m                             Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-62-28adcd2d1b82>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mx\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msend\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m44\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;31mStopIteration\u001b[0m: "
+     ]
+    }
+   ],
+   "source": [
+    "x.send(44)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
    "metadata": {
     "slideshow": {
      "slide_type": "slide"
@@ -20,47 +333,62 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 3,
+   "execution_count": 27,
    "metadata": {},
    "outputs": [
     {
-     "data": {
-      "text/plain": [
-       "'An expert is a person who has made all the mistakes that can be made in a very narrow field.\\nPrediction is very difficult, especially about the future.\\nThose who are not shocked when they first come across quantum theory cannot possibly have understood it.\\n'"
-      ]
-     },
-     "execution_count": 3,
-     "metadata": {},
-     "output_type": "execute_result"
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "An expert is a person who has made all the mistakes that can be made in a very narrow field.\n",
+      "\n"
+     ]
     }
    ],
    "source": [
     "f = open('testfiles/bohr.txt', 'r')\n",
-    "f.read()\n",
+    "print(f.readline())\n",
     "f.close()"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 2,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "with open('testfiles/bohr.txt', 'r') as f:\n",
-    "    f.readline\n",
-    "    \n"
    ]
   },
   {
    "cell_type": "markdown",
    "metadata": {},
    "source": [
+    "Or this (which does the same thing):"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "An expert is a person who has made all the mistakes that can be made in a very narrow field.\n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "with open('testfiles/bohr.txt', 'r') as f:\n",
+    "    print(f.readline())"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "This \"**with**\" approach follows the Context Manager protocol.    \n",
+    "\n",
     "This is a convenient alternative to writing:"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 4,
+   "execution_count": 13,
    "metadata": {},
    "outputs": [
     {
@@ -96,7 +424,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 29,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -118,7 +446,9 @@
    },
    "source": [
     "## Basic Context Managers\n",
-    "The context manager protocol consists of an **\\_\\_enter__** and an **\\_\\_exit__** method.  \n",
+    "The context manager protocol consists of an \n",
+    "* **\\_\\_enter__** and an \n",
+    "* **\\_\\_exit__** method.    \n",
     "when using the **with** statement the **\\_\\_enter__** method is called.  \n",
     "What is in the scope is executed and  \n",
     "The **\\_\\_exit__** method is called when leaving the scope.  "
@@ -126,24 +456,13 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 5,
+   "execution_count": 1,
    "metadata": {
     "slideshow": {
      "slide_type": "subslide"
     }
    },
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "__enter__\n",
-      "An expert is a person who has made all the mistakes that can be made in a very narrow field.\n",
-      "\n",
-      "__exit__\n"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
     "class OpenFile():\n",
     "    def __init__(self, filename, mode):\n",
@@ -157,11 +476,28 @@
     "\n",
     "    def __exit__(self, *args):\n",
     "        print('__exit__')\n",
-    "        self.file.close()\n",
-    "\n",
-    "\n",
+    "        self.file.close()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "__enter__\n",
+      "An expert is a person who has made all the mistakes that can be made in a very narrow field.\n",
+      "\n",
+      "__exit__\n"
+     ]
+    }
+   ],
+   "source": [
     "with OpenFile('testfiles/bohr.txt', 'r') as f:\n",
-    "    print(f.readline())\n"
+    "    print(f.readline())"
    ]
   },
   {
@@ -173,19 +509,16 @@
    },
    "source": [
     "### contextlib\n",
-    "The contextlib module consists of different context manager.  \n",
-    "We will look at 2 of them.  \n",
+    "The contextlib module consists of different context managers.  \n",
+    "We will look at 1 of them.  \n",
     "\n",
     "**@contextmanager**\n",
-    "> A decorator that lest you build a context manager from a simple generator function, instead of creating a class and implementing the protocol.  \n",
-    "\n",
-    "**ContextDecorator**\n",
-    "> A base class for defining class-based context managers that can also be used as function decorators, running the entire function within a managed context. "
+    "> A decorator that lest you build a context manager from a simple generator function, instead of creating a class and implementing the protocol.  "
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 2,
+   "execution_count": 63,
    "metadata": {
     "slideshow": {
      "slide_type": "subslide"
@@ -221,100 +554,11 @@
    ]
   },
   {
-   "cell_type": "markdown",
-   "metadata": {
-    "slideshow": {
-     "slide_type": "slide"
-    }
-   },
-   "source": [
-    "## ContextDecorator"
-   ]
-  },
-  {
    "cell_type": "code",
-   "execution_count": 19,
-   "metadata": {
-    "slideshow": {
-     "slide_type": "subslide"
-    }
-   },
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "<p>\n",
-      "Python is nice\n",
-      "</p>\n"
-     ]
-    }
-   ],
-   "source": [
-    "from contextlib import ContextDecorator\n",
-    "\n",
-    "class Makeparagraph(ContextDecorator):\n",
-    "    def __enter__(self):\n",
-    "        print('<p>')\n",
-    "        return self\n",
-    "\n",
-    "    def __exit__(self, *arg):\n",
-    "        print('</p>')\n",
-    "        return False\n",
-    "    \n",
-    "@Makeparagraph()\n",
-    "def emit_html(msg):\n",
-    "    print(msg)\n",
-    "\n",
-    "emit_html('Python is nice')"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {
-    "slideshow": {
-     "slide_type": "slide"
-    }
-   },
-   "source": [
-    "### Decorator function"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 10,
-   "metadata": {
-    "slideshow": {
-     "slide_type": "subslide"
-    }
-   },
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "<p>\n",
-      "Hello world\n",
-      "</p>\n"
-     ]
-    }
-   ],
-   "source": [
-    "def makeparagraph(func):\n",
-    "    def inner_decorator(*args, **kwargs):\n",
-    "        print(\"<p>\")\n",
-    "        func(*args, **kwargs)\n",
-    "        print(\"</p>\")\n",
-    "    return inner_decorator\n",
-    "\n",
-    "\n",
-    "@makeparagraph\n",
-    "def greetings(msg):\n",
-    "    print(msg)\n",
-    "\n",
-    "\n",
-    "greetings('Hello world')"
-   ]
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
   }
  ],
  "metadata": {

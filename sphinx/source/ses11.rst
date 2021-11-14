@@ -30,36 +30,49 @@ Materials
 Exercises
 ---------
 
+**1. Coroutine to Compute a Running Average**
+Change the function below into a coroutine (generator) that calculates a running avarage. So instead of returning an avarage based on the parameter it should calculate an avarage based on the values inserted into the coroutine with the .send() method.  
+
+.. code:: python 
+   :linenos:
+
+   def averager(*args):
+        sum = 0
+        for i in args:
+               sum += i
+        return sum/len(args)
+   
+**2. Context manager class**
+Create a class "Makeparagraph" that "decorates" a text with an html \<p\> tag.
+
+
+**3. contextlib**
+In the code example below we can se that the connect() function is a context manager. It has an \_\_enter\_\_ and an \_\_exit\_\_ method, and therefore works together with the "with" keyword.     
+
+.. code:: python
+   :linenos:
+
+        from sqlite3 import connect
+
+        with connect('testfiles/school.db') as conn:
+            cur = conn.cursor()
+            cur.execute('CREATE TABLE students(id int PRIMARY KEY, name text, cpr text)')
+            cur.execute('INSERT INTO students(id, name, cpr) VALUES (1, "Claus", "223344-5566")')
+            cur.execute('INSERT INTO students(id, name, cpr) VALUES (2, "Julie", "111111-1111")')
+            cur.execute('INSERT INTO students(id, name, cpr) VALUES (3, "Hannah", "222222-2222")')
+
+            for i in cur.execute('SELECT * FROM students'):
+                print(i)
+
+            cur.execute('DROP TABLE students')
+
+The "CREATE TABLE" and the "DROP TABLE" has also some \_\_enter\_\_ / \_\_exit\_\_ logic behind it.    
+Put this logic into its own contextmanager and use it. This should be done by using the contextmanager decorator from the contextlib library.     
+
+
+
 * `JSON 10 minutes exer <notebooks/JSON.html#10-minutes-exercise>`_
 * `SQlite 10 minutes exer <notebooks/Sqlite.html#10-minutes-exercise>`_
 * `ConvertCSVtoJSON <notebooks/ConvertCSVtoJSON.ipynb>`_ ( `Solution <exercises/solution/10_context_managers/SolutionConvertCSVtoJSON.ipynb>`_)
 * `Decorator / Context Manager <notebooks/Assignment_Decorator_Context_Manager.ipynb>`_  (`Solution <exercises/solution/10_context_managers/Assignment_Decorator_Context_Manager.ipynb>`_) 
-
-
-
-
-.. todo::
-
-   * dataclasses - @dataclass - decorator for fast creation of classes
-     * decorator classes. 
-       * __call__() method implementation
-         * show the add() example:q
-
-
-
-
-
-..        -----------------------
-        Follow these tutorials:
-        -----------------------
-        * `Python Context Managers <https://stackabuse.com/python-context-managers/>`_
-        * `Working With JSON Data in Python <https://realpython.com/python-json/>`_
-        * `Reading and Writing CSV Files in Python <https://realpython.com/python-csv/>`_
-
-
-
-
-
-..
-        * `CSV Quiz <https://realpython.com/quizzes/python-csv/>`_
 
