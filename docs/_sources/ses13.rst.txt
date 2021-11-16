@@ -1,12 +1,11 @@
-Session 13 - Dataclasses 
-========================
+Session 13 - Recap & Exercises 
+==============================
 
 Learning Goals
 --------------
 
 Materials
 ---------
-* `Data Classes in Python 3.7+ (Guide) <https://realpython.com/python-data-classes/>`_
 
 Exercises
 ---------
