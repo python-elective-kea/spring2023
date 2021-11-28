@@ -1,6 +1,9 @@
 Session 13 - Hacking with python 
 ================================
 
+Today we will a more "workshop" approach than normal. You will have a short introduction to the tutorials below, and then you will start working on it and we will see what happens :) .
+
+
 Learning Goals
 --------------
 * To use Python as the programming language for different kinds of Ethical Hacking use cases.
@@ -18,4 +21,4 @@ Materials
 
 Exercises
 ---------
-
+Follow the tutorials above and extend it so it follows your own needs. 
