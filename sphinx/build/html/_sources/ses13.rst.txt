@@ -1,7 +1,7 @@
 Session 13 - Hacking with python 
 ================================
 
-Today we will a more "workshop" approach than normal. You will have a short introduction to the tutorials below, and then you will start working on it and we will see what happens :) .
+Today we will be a more "workshop" approach than normal. You will have a short introduction to the tutorials below, and then you will start working on it and we will see what happens :) .
 
 
 Learning Goals
