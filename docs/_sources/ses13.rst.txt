@@ -18,7 +18,9 @@ Materials
 * `How to Use Shodan API in Python <https://www.thepythoncode.com/article/using-shodan-api-in-python>`_
 * `How to Make a SYN Flooding Attack in Python <https://www.thepythoncode.com/article/syn-flooding-attack-using-scapy-in-python>`_
 * `Code examples from teaching <https://github.com/python-elective-kea/fall2021-code-examples-from-teachings/tree/main/ses13>`_
-
+* `Code examples from tpday <https://github.com/python-elective-kea/fall2021-code-examples-from-teachings/tree/main/ses13>`_
 Exercises
 ---------
 Follow the tutorials above and extend it so it follows your own needs. 
+
+For more inspiration have a look at this: https://www.thepythoncode.com/topic/ethical-hacking 
