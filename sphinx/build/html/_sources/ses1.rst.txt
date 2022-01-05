@@ -25,7 +25,7 @@ Materials
 * `Strings and Character Data in Python <https://realpython.com/python-strings/>`_
 * `if Statements <https://docs.python.org/3/tutorial/controlflow.html#if-statements>`_
 * `Docker Commands from today <cheatsheet.rst>`_
-* `Code examples from teachings <https://github.com/python-elective-kea/fall2021-code-examples-from-teachings/tree/master/ses1>`_
+* `Code examples from teachings <https://github.com/python-elective-kea/spring2022-code-examples-from-teachings/tree/master/ses1>`_
 
 Exercises
 ---------

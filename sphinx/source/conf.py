@@ -18,7 +18,7 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'Introduction to python'
-copyright = '2021, Claus Bove'
+copyright = '2022, Claus Bove'
 author = 'Claus Bove'
 
 # The full version, including alpha/beta/rc tags
@@ -64,14 +64,14 @@ html_show_sourcelink = False
 
 html_context = {
     "display_github": True,
-    "github_url" : "https://github.com/python-elective-kea/fall2021",
+    "github_url" : "https://github.com/python-elective-kea/spring2022",
 
     # Set the following variables to generate the resulting github URL for each page. 
     # Format Template: https://{{ github_host|default("github.com") }}/{{ github_user }}
     #/{{ github_repo }}/blob/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ suffix }}
     #https://github.com/runawayhorse001/SphinxGithub/blob/master/doc/index.rst
     'github_user': 'python-elective-kea',
-    'github_repo': 'fall2021',
+    'github_repo': 'spring2022',
     'github_version': 'master/sphinx/source/' ,
 
 }
