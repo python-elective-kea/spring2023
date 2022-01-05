@@ -1,4 +1,4 @@
-Introduction to python fall 2021
+Introduction to python spring 2022
 ==================================
 
 .. raw:: html
