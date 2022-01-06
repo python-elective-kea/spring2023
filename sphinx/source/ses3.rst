@@ -11,12 +11,17 @@ There will be no normal teachings, and no introduction to this assignment. If yo
 `Check you solutions agains this <exercises/solution/03_mandatory_set_dicts/Solutions_mandatory_sets_dicts.ipynb>`_
 
 .. note:: 
+        | **Python B class (Thursday class)**
+        | `Link to Assignment on fronter  <>`_
+        | Start time: Thursday 8:30
+        | Hand in latest: **Thursday 11:45**
+        | Peer Review: Hand in latest **Friday 12:00** (tomorrow)
 
-        | `Link to Assignment on fronter <https://kea-fronter.itslearning.com/LearningToolElement/ViewLearningToolElement.aspx?LearningToolElementId=908370>`_ 
-        | Start time: Monday 12:30
-        | Hand in latest: **Monday 15:45**
-        
-        | Peer Review: Hand in latest **Tuesday 12:00** (tomorrow)
+        | **Python A class (Fridayday class)**
+        | `Link to Assignment on fronter  <>`_
+        | Start time: Friday 8:30
+        | Hand in latest: **Friday 11:45**
+        | Peer Review: Hand in latest **Monday 12:00**
 
 The final evaluation of your assignment will be done by Claus and will be either a passed or not passed evaluation. 
 
