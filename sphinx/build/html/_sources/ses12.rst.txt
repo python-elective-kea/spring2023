@@ -1,23 +1,15 @@
+Session 12 - Simple API development 
+===================================
+Todays task is to (easy) develop a web api using **Flask**, **Swagger**, **Sqlite**. You will deploy it at **Heroku** through **github** and the environment you will do this in will be **docker**.
 
-Session 12 - Problem-Solving with python
-========================================
-Today we will solve problems. The code you will use for doing this will primarely be through things you already know. 
+Learning goals
+--------------
+*  
 
 
 Materials
 ---------
-`Solution  <exercises/solution/48_problem_solving/solutions.rst>`_
-
-.. raw:: html
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/XKu_SEDAykw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-* `Google job interview <https://www.youtube.com/watch?v=XKu_SEDAykw>`_
-* `Code examples from teachings <https://github.com/python-elective-kea/spring2022-code-examples-from-teachings/tree/main/ses12>`_
+* `Working with APIs using Flask, Flask-RESTPlus and Swagger UI <https://towardsdatascience.com/working-with-apis-using-flask-flask-restplus-and-swagger-ui-7cf447deda7f>`_
 
 Exercises
 ---------
-
-* `Card Challange <notebooks/CardChallenge.ipynb>`_  (`Solution <exercises/solution/48_problem_solving/CardChallenge_solution.ipynb>`_)
-* `Euler Project <notebooks/project_euler.ipynb>`_  (`Solution <exercises/solution/48_problem_solving/project_euler_solutions.ipynb>`_)
