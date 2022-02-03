@@ -23,22 +23,6 @@ Course Workload
   * 3 hours teachings
   * 11 hours homework
     
-Sessions Workflow
------------------
-The sessions are 3 hours long and will primarely follow this pattern:
-
-.. list-table:: Teachings Workflow
-        :widths: 25 75
-        :header-rows: 0
-
-        * - 50 min   
-          - Introduktion to todays topic
-        * - 1,5 hour  
-          - Exercises and Study groups
-        * - 30 min 
-          - Follow up and Goodbuy
-
-
 
 Software Needed for the Course
 ------------------------------
