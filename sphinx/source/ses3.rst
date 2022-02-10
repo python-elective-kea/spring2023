@@ -13,8 +13,8 @@ There will be no normal teachings, and no introduction to this assignment. If yo
 .. note:: 
         | **Python B class (Thursday class)**
         | `Link to Assignment on fronter  <>`_
-        | Start time: Thursday 8:30
-        | Hand in latest: **Thursday 11:45**
+        | Start time: Thursday 12:30
+        | Hand in latest: **Thursday 15:45**
         | Peer Review: Hand in latest **Friday 12:00** (tomorrow)
 
         | **Python A class (Fridayday class)**
