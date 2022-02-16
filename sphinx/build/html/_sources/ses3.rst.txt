@@ -5,20 +5,20 @@ Todays lectures will be used for your first mandatory assignment. The assignment
 
 You can work on this asignment from home or you can be at the school. 
 
-There will be no normal teachings, and no introduction to this assignment. If you need assistance you can contact me (Claus) on Teams, (Call me: clbo@kea.dk).  
+**There will be no normal teachings, and no introduction to this assignment.** 
 
 **Solutions**
 `Check you solutions agains this <exercises/solution/03_mandatory_set_dicts/Solutions_mandatory_sets_dicts.ipynb>`_
 
 .. note:: 
         | **Python B class (Thursday class)**
-        | `Link to Assignment on fronter  <>`_
+        | `Link to Assignment on fronter  <https://kea-fronter.itslearning.com/LearningToolElement/ViewLearningToolElement.aspx?LearningToolElementId=964731>`_
         | Start time: Thursday 12:30
         | Hand in latest: **Thursday 15:45**
         | Peer Review: Hand in latest **Friday 12:00** (tomorrow)
 
         | **Python A class (Fridayday class)**
-        | `Link to Assignment on fronter  <>`_
+        | `Link to Assignment on fronter  <https://kea-fronter.itslearning.com/LearningToolElement/ViewLearningToolElement.aspx?LearningToolElementId=964733>`_
         | Start time: Friday 8:30
         | Hand in latest: **Friday 11:45**
         | Peer Review: Hand in latest **Monday 12:00**
