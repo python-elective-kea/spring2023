@@ -26,7 +26,7 @@ Some weeks before the oral examination you should hand in a synopsis on wiseflow
 Oral exam:
 **********
 
-* Prior to the exam you should have prepared a 10 minutes presentation for the 4 topics. At the beginnig of the examination you then randomly pick a topic to focus on for your examination.
+* Prior to the exam you should have prepared a 10 minutes presentation for the 3 topics. At the beginnig of the examination you then randomly pick a topic to focus on for your examination.
 * Do a 10 minutes presentation with code examples for the picked topic.
 * After your presentation 15 minutes examination within this topic and other related topics.
 
@@ -40,7 +40,6 @@ This you should do through demonstrating your knowlege, skills and competencies 
         * Data Structures & functions
         * Pythonic OOP
         * Generators, Decorators & Context Managers
-        * Python modules and the python development environment.
 
 You can get inspiration about what to talk about within each topic in your presentation `here <notebooks/exam_synopsis_template.md>`_.
 

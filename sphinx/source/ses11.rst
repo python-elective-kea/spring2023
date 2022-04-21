@@ -19,7 +19,7 @@ Learning goals
 Materials
 ---------
 
-* `What Does It Take To Be An Expert At Python? <https://www.youtube.com/watch?v=7lmCu8wz8ro>`_
+* `What Does It Take To Be An Expert At Python? <https://www.youtube.com/watch?v=7lmCu8wz8ro>`_ *(good and advanced recap of what we covered in the teachings. Skip the Meta Classes part in the start of the video)*
 * `Context Managers notebook <notebooks/Context-managers.ipynb>`_
 * `JSON notebook <notebooks/JSON.ipynb>`_
 * `Pickle notebook <notebooks/Pickle-Pythonobjectserialization.ipynb>`_
