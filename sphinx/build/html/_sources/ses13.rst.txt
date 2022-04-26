@@ -11,4 +11,4 @@ We will also do 1 or 2 exam simulations at the blackboard.
 
 After this you should all have a good idea of how the exam will be. 
 
-So please prepare a 10 minutes presentation before this class if you would like to be the "guinie pig"
+So please prepare a 10 minutes presentation before this class if you would like to be the "guinea pig"
