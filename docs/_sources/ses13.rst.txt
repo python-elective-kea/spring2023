@@ -1,5 +1,5 @@
-Session 13 - Exam preperration
-==============================
+Session 13 - Exam preperation
+=============================
 
 Today you will get a short demonstration of how your exam hand-in is supposed to look like.
 
