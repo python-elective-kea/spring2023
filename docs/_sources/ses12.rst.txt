@@ -4,12 +4,12 @@ Session 12 - Follow up / recap
 Today we will do a recap on what we worked with this semster. We will also look at the parts we did not cover earlier this semester. 
 
 
-## Learning goals
-* 
+Learning goals
+-------------- 
 
-## Materials
-
-* `Notebook from today <notebook/Semester_recap.ipynb>`_
+Materials
+---------
+* `Notebook from today <notebooks/Semester_recap.ipynb>`_
 
 
 
