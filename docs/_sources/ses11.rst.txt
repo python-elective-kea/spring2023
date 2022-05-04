@@ -29,7 +29,7 @@ Materials
 
 Exercises
 ---------
-
+* `Solutions <exercises/solution/10_context_managers/solutions.ipynb>`_
 **1. Coroutine to Compute a Running Average**
 Change the function below into a coroutine (generator) that calculates a running avarage. So instead of returning an avarage based on the parameter it should calculate an avarage based on the values inserted into the coroutine with the .send() method.  
 
