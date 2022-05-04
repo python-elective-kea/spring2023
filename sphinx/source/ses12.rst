@@ -4,6 +4,15 @@ Session 12 - Follow up / recap
 Today we will do a recap on what we worked with this semster. We will also look at the parts we did not cover earlier this semester. 
 
 
+## Learning goals
+* 
+
+## Materials
+
+* `Notebook from today <notebook/Semester_recap.ipynb>`_
+
+
+
 
 ..
         Todays task is to (easy) develop a web api using **Flask**, **Swagger**, **Sqlite**. You will deploy it at **Heroku** through **github** and the environment you will do this in will be **docker**.

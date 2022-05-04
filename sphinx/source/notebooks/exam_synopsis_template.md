@@ -11,8 +11,6 @@ In my presentation i will focus on encapsulation and how this is achieved throug
 
 ## 3. Generators, Decorators & Context Managers
 
-## 4. Python modules and the python development environment. 
-
 
 
 
