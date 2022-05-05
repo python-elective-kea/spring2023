@@ -425,31 +425,129 @@ div.rendered_html tbody tr:hover {
 </style>
 <div class="section" id="Semester-Recap">
 <h1>Semester Recap<a class="headerlink" href="#Semester-Recap" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="Strings">
-<h2>Strings<a class="headerlink" href="#Strings" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="Strings,-Numbers,-Datastructures">
+<h2>Strings, Numbers, Datastructures<a class="headerlink" href="#Strings,-Numbers,-Datastructures" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Top level syntax and build-in functions</p></li>
-<li><p>String methods</p></li>
+<li><p>Python is super consistant</p></li>
+<li><p>Can be seen as an API (inteface) to executable C Code that can be programmed through top level syntax and functions</p></li>
+<li><p>Top level syntax and build-in functions can be used on own objects as well</p></li>
+<li><p>Requires dunder methods to be implemented in own classes</p></li>
+<li><p>Besides that theres are also methods on objects (Java, C++, C# style).</p></li>
 </ul>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[47]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<span></span>s = &#39;Hello&#39;
+l = [&#39;abc&#39;, &#39;tom&#39;, &#39;Jerry&#39;, &#39;ole&#39;] # list
+t = (&#39;Cop&#39;, &#39;AAB&#39;, &#39;Thy&#39;, &#39;JBA&#39;)   # tuple
+s = {&#39;Vanilla&#39;,&#39;Lemon&#39;,&#39;Flour&#39;}    # set
+d = {&#39;name&#39;: &#39;Claus&#39;, &#39;age&#39;: &#39;33&#39;} # dictionary
 </pre></div>
 </div>
 </div>
+<div class="section" id="len()">
+<h3>len()<a class="headerlink" href="#len()" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
+</pre></div>
 </div>
-<div class="section" id="Data-Structures">
-<h2>Data Structures<a class="headerlink" href="#Data-Structures" title="Permalink to this headline">¶</a></h2>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>len(s), len(l), len(t), len(s), len(d)
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+(3, 4, 4, 3, 2)
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="set()">
+<h3>set()<a class="headerlink" href="#set()" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[82]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>set(d)
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[82]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;age&#39;, &#39;name&#39;}
+</pre></div></div>
+</div>
+</div>
+</div>
+<div class="section" id="Sorting">
+<h2>Sorting<a class="headerlink" href="#Sorting" title="Permalink to this headline">¶</a></h2>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>sorted(l, reverse=False, key=len)
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[&#39;abc&#39;, &#39;tom&#39;, &#39;ole&#39;, &#39;Jerry&#39;]
+</pre></div></div>
+</div>
+<div class="section" id="Custorm-sorting">
+<h3>Custorm sorting<a class="headerlink" href="#Custorm-sorting" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>def o_in_word(w):
+    return &#39;o&#39; in w
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>sorted(l, key=o_in_word)
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[&#39;abc&#39;, &#39;Jerry&#39;, &#39;tom&#39;, &#39;ole&#39;]
+</pre></div></div>
+</div>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<span></span>## Lists, Tuples, Set, Dict
 </pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -457,7 +555,7 @@ div.rendered_html tbody tr:hover {
 <div class="section" id="List-Comprehensions">
 <h1>List Comprehensions<a class="headerlink" href="#List-Comprehensions" title="Permalink to this headline">¶</a></h1>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[77]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -467,7 +565,7 @@ sizes = [&#39;s&#39;, &#39;m&#39;, &#39;l&#39;, &#39;xl&#39;]
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[78]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -476,7 +574,7 @@ sizes = [&#39;s&#39;, &#39;m&#39;, &#39;l&#39;, &#39;xl&#39;]
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[78]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -492,7 +590,7 @@ sizes = [&#39;s&#39;, &#39;m&#39;, &#39;l&#39;, &#39;xl&#39;]
 </pre></div></div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[79]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -501,7 +599,7 @@ sizes = [&#39;s&#39;, &#39;m&#39;, &#39;l&#39;, &#39;xl&#39;]
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[80]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -510,7 +608,7 @@ sizes = [&#39;s&#39;, &#39;m&#39;, &#39;l&#39;, &#39;xl&#39;]
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[80]:
 </pre></div>
 </div>
 <div class="output_area docutils container">

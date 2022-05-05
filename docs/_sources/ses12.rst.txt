@@ -9,7 +9,9 @@ Learning goals
 
 Materials
 ---------
-* `Notebook from today <notebooks/Semester_recap.ipynb>`_
+..
+  
+        * `Notebook from today <notebooks/Semester_recap.ipynb>`_
 
 
 
