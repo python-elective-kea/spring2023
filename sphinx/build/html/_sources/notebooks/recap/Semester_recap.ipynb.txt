@@ -63,27 +63,27 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "### all()"
+    "### set()"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 58,
+   "execution_count": 82,
    "metadata": {},
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "{('age', '33'), ('name', 'Claus')}"
+       "{'age', 'name'}"
       ]
      },
-     "execution_count": 58,
+     "execution_count": 82,
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-    "set(d.items())"
+    "set(d)"
    ]
   },
   {
@@ -151,6 +151,15 @@
    ]
   },
   {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "## Lists, Tuples, Set, Dict"
+   ]
+  },
+  {
    "cell_type": "markdown",
    "metadata": {},
    "source": [
@@ -159,7 +168,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 1,
+   "execution_count": 77,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -169,7 +178,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 3,
+   "execution_count": 78,
    "metadata": {},
    "outputs": [
     {
@@ -185,7 +194,7 @@
        " ('White', 'xl')]"
       ]
      },
-     "execution_count": 3,
+     "execution_count": 78,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -196,7 +205,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 4,
+   "execution_count": 79,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -205,7 +214,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 5,
+   "execution_count": 80,
    "metadata": {},
    "outputs": [
     {
@@ -219,7 +228,7 @@
        " ('White', 'xl')]"
       ]
      },
-     "execution_count": 5,
+     "execution_count": 80,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -227,6 +236,46 @@
    "source": [
     "[(c,s) for c in colors for s in sizes if (c, s) not in soled_out]"
    ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Modules"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "raw",
+   "metadata": {},
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
   },
   {
    "cell_type": "code",
