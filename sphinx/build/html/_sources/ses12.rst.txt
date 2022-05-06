@@ -10,7 +10,7 @@ Learning goals
 Materials
 ---------
 
-
+* `Code from today <https://github.com/python-elective-kea/spring2022-code-examples-from-teachings/tree/master/ses12>`_
 
 
 ..
