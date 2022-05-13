@@ -21,6 +21,7 @@ Materials
 ---------
 * `Installations <notebooks/installation.md>`_
 * `Unix commands and file system <notebooks/unix_commands.md>`_
+* `8 World-Class Software Companies That Use Python <https://realpython.com/world-class-companies-using-python/>`_
 * `Is Python interpreted or compiled? Yes. <https://nedbatchelder.com/blog/201803/is_python_interpreted_or_compiled_yes.html>`_
 * `Strings and Character Data in Python <https://realpython.com/python-strings/>`_
 * `if Statements <https://docs.python.org/3/tutorial/controlflow.html#if-statements>`_

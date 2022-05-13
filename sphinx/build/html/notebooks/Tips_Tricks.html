@@ -1,68 +1,34 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Notes on Tips &amp; Tricks &mdash; Introduction to python 4.0.0 documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-
-  
-  
-  
-  
-
-  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notes on Tips &amp; Tricks &mdash; Introduction to python 4.0.0 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/language_data.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "tex2jax_ignore|mathjax_ignore|document", "processClass": "tex2jax_process|mathjax_process|math|output_area"}})</script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
-            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Introduction to python
-          
-
-          
+            <a href="../index.html" class="icon icon-home"> Introduction to python
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -70,18 +36,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../about.html">About this elective</a></li>
@@ -89,6 +44,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../cheatsheet.html">Commandline Cheatsheet</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ses1.html">Session 1 - Introduction to python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ses2.html">Session 2 - Data Structures: List &amp; Tuples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ses3a.html">Session 3 - Datastructures: Sets &amp; Dictionaries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ses3.html">Session 3 - Mandatory assignment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ses4.html">Session 4 - List comprehensions, Modules</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ses5.html">Session 5 - Utilities and Modules</a></li>
@@ -103,91 +59,64 @@
 <li class="toctree-l1"><a class="reference internal" href="../ses14-15.html">Session 14 - Exam preperation</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Introduction to python</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-        
       <li>Notes on Tips &amp; Tricks</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/python-elective-kea/spring2022/blob/master/sphinx/source/notebooks/Tips_Tricks.ipynb" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput.container,
-div.nbinput.container div.prompt,
-div.nbinput.container div.input_area,
-div.nbinput.container div[class*=highlight],
-div.nbinput.container div[class*=highlight] pre,
-div.nboutput.container,
-div.nboutput.container div.prompt,
-div.nboutput.container div.output_area,
-div.nboutput.container div[class*=highlight],
-div.nboutput.container div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
 }
 
 /* avoid gaps between output lines */
@@ -288,7 +217,7 @@ div.nboutput.container div.output_area {
 div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
@@ -354,6 +283,7 @@ div.nboutput.container div.output_area.rendered_html,
 div.nboutput.container div.output_area > div.output_javascript,
 div.nboutput.container div.output_area:not(.rendered_html) > img{
     padding: 5px;
+    margin: 0;
 }
 
 /* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
@@ -363,7 +293,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
-.prompt a.copybtn {
+.prompt .copybtn {
     display: none;
 }
 
@@ -424,28 +354,26 @@ div.rendered_html tbody tr:hover {
 }
 </style>
 <div class="section" id="Notes-on-Tips-&amp;-Tricks">
-<h1>Notes on Tips &amp; Tricks<a class="headerlink" href="#Notes-on-Tips-&-Tricks" title="Permalink to this headline">¶</a></h1>
+<h1>Notes on Tips &amp; Tricks<a class="headerlink" href="#Notes-on-Tips-&-Tricks" title="Permalink to this headline"></a></h1>
 <div class="section" id="Sqlite">
-<h2>Sqlite<a class="headerlink" href="#Sqlite" title="Permalink to this headline">¶</a></h2>
+<h2>Sqlite<a class="headerlink" href="#Sqlite" title="Permalink to this headline"></a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span># Jeg har ikke fået kigget på det.
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Jeg har ikke fået kigget på det.
 # Vi kan kigge på det næste uge hvis det har interesse.
 </pre></div>
 </div>
 </div>
 </div>
 <div class="section" id="Merge-dictionaries">
-<h2>Merge dictionaries<a class="headerlink" href="#Merge-dictionaries" title="Permalink to this headline">¶</a></h2>
+<h2>Merge dictionaries<a class="headerlink" href="#Merge-dictionaries" title="Permalink to this headline"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>x = {&#39;a&#39;: 1, &#39;b&#39;: 2}
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>x = {&#39;a&#39;: 1, &#39;b&#39;: 2}
 y = {&#39;b&#39;: 3, &#39;c&#39;: 4}
 
 z = {**x, **y}
@@ -465,13 +393,12 @@ z
 </div>
 </div>
 <div class="section" id="Using-dictionary-as-a-switch">
-<h2>Using dictionary as a switch<a class="headerlink" href="#Using-dictionary-as-a-switch" title="Permalink to this headline">¶</a></h2>
+<h2>Using dictionary as a switch<a class="headerlink" href="#Using-dictionary-as-a-switch" title="Permalink to this headline"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>case = input(&#39;What would you like to do? (+,-,*,/)&#39;)
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>case = input(&#39;What would you like to do? (+,-,*,/)&#39;)
 key = input(f&#39;What numbers would you like to {case}? (x{case}y)&#39;)
 keys = [int(x) for x in key.split(f&#39;{case}&#39;)]
 {
@@ -502,7 +429,7 @@ What numbers would you like to +? (x+y)12+88
 </pre></div></div>
 </div>
 <div class="section" id="Exercise:">
-<h3>Exercise:<a class="headerlink" href="#Exercise:" title="Permalink to this headline">¶</a></h3>
+<h3>Exercise:<a class="headerlink" href="#Exercise:" title="Permalink to this headline"></a></h3>
 <p>In the module below, you should create a register dictionary that has the name of each function as a key and the function itself as a value.</p>
 <p>{‘home’ : home, ‘about’ : about}</p>
 <p>The register should always corospond to the functions that are in the file.</p>
@@ -511,8 +438,7 @@ What numbers would you like to +? (x+y)12+88
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>register = {}
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>register = {}
 def home():
     return &#39;I am the Home page&#39;
 def about():
@@ -529,8 +455,7 @@ def contact():
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
@@ -540,13 +465,12 @@ def contact():
 </div>
 </div>
 <div class="section" id="Swapping-values">
-<h2>Swapping values<a class="headerlink" href="#Swapping-values" title="Permalink to this headline">¶</a></h2>
+<h2>Swapping values<a class="headerlink" href="#Swapping-values" title="Permalink to this headline"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[61]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>a = 42
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>a = 42
 b = 33
 
 print(f&#39;a = {a}, b = {b}&#39;)
@@ -577,14 +501,13 @@ a = 42, b = 33
 </div>
 </div>
 <div class="section" id="http.server">
-<h2>http.server<a class="headerlink" href="#http.server" title="Permalink to this headline">¶</a></h2>
+<h2>http.server<a class="headerlink" href="#http.server" title="Permalink to this headline"></a></h2>
 <p>You can serve files and folders via http over a network by using the http.server command</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span># python3 -m http.server
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># python3 -m http.server
 </pre></div>
 </div>
 </div>
@@ -593,8 +516,7 @@ a = 42, b = 33
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span># docker run -it --rm -p 8000:8000 -v $(PWD):/docs python3 -m http.server --bind 0.0.0.0
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># docker run -it --rm -p 8000:8000 -v $(PWD):/docs python3 -m http.server --bind 0.0.0.0
 </pre></div>
 </div>
 </div>
@@ -602,8 +524,7 @@ a = 42, b = 33
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>### Exercise 1: Flask
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>### Exercise 1: Flask
 </pre></div>
 </div>
 </div>
@@ -612,49 +533,30 @@ a = 42, b = 33
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        
-        &copy; Copyright 2022, Claus Bove
-
-    </p>
+    <p>&#169; Copyright 2022, Claus Bove.</p>
   </div>
-    
-    
-    
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
-    
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

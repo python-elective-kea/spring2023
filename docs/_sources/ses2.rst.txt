@@ -1,8 +1,11 @@
 Session 2 - Data Structures: List & Tuples
 ==========================================
 
-Today we will work with data structures in python. You will by the end of these sessions be able to use Lists and Tuples, read and Write to Files and work with the for and while loop.
+Today we will work with data structures in python. You will by the end of these sessions be able to use Lists and Tuples, read and Write to Files and work with the **for** and **while** loop.
 
+List and tuples are two of the build-in datastructures in python.
+
+Lists is a collection that have a resemblense ArrayList in Java. You can append and pop, access its elements through an index.
 Learning goals
 --------------
 
@@ -20,7 +23,7 @@ Materials
 * `Tuples in Python <https://www.datacamp.com/community/tutorials/python-tuples>`_
 * `Python "for" Loops <https://realpython.com/python-for-loop/>`_
 * `Python "while" Loops <https://realpython.com/python-while-loop/>`_
-* `How to Use sorted() and sort() in Python <https://realpython.com/python-sort/>`_
+* `How to Use sorted() and not .sort() in Python <https://realpython.com/python-sort/>`_
 * `Notebook (teachings notes from today) <notebooks/noterlists_tuples.ipynb>`_
 * `Code examples from teachings <https://github.com/python-elective-kea/spring2022-code-examples-from-teachings/tree/master/ses2>`_
 * `How to Learn Python in Five Minutes <https://www.youtube.com/watch?v=ohr6O78jGzs>`_

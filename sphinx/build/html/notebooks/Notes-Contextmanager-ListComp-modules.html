@@ -1,68 +1,34 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>List Comprehensions &mdash; Introduction to python 4.0.0 documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-
-  
-  
-  
-  
-
-  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>List Comprehensions &mdash; Introduction to python 4.0.0 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/language_data.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "tex2jax_ignore|mathjax_ignore|document", "processClass": "tex2jax_process|mathjax_process|math|output_area"}})</script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
-            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Introduction to python
-          
-
-          
+            <a href="../index.html" class="icon icon-home"> Introduction to python
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -70,18 +36,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../about.html">About this elective</a></li>
@@ -89,6 +44,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../cheatsheet.html">Commandline Cheatsheet</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ses1.html">Session 1 - Introduction to python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ses2.html">Session 2 - Data Structures: List &amp; Tuples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ses3a.html">Session 3 - Datastructures: Sets &amp; Dictionaries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ses3.html">Session 3 - Mandatory assignment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ses4.html">Session 4 - List comprehensions, Modules</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ses5.html">Session 5 - Utilities and Modules</a></li>
@@ -103,91 +59,64 @@
 <li class="toctree-l1"><a class="reference internal" href="../ses14-15.html">Session 14 - Exam preperation</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Introduction to python</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-        
       <li>List Comprehensions</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/python-elective-kea/spring2022/blob/master/sphinx/source/notebooks/Notes-Contextmanager-ListComp-modules.ipynb" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput.container,
-div.nbinput.container div.prompt,
-div.nbinput.container div.input_area,
-div.nbinput.container div[class*=highlight],
-div.nbinput.container div[class*=highlight] pre,
-div.nboutput.container,
-div.nboutput.container div.prompt,
-div.nboutput.container div.output_area,
-div.nboutput.container div[class*=highlight],
-div.nboutput.container div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
 }
 
 /* avoid gaps between output lines */
@@ -288,7 +217,7 @@ div.nboutput.container div.output_area {
 div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
@@ -354,6 +283,7 @@ div.nboutput.container div.output_area.rendered_html,
 div.nboutput.container div.output_area > div.output_javascript,
 div.nboutput.container div.output_area:not(.rendered_html) > img{
     padding: 5px;
+    margin: 0;
 }
 
 /* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
@@ -363,7 +293,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
-.prompt a.copybtn {
+.prompt .copybtn {
     display: none;
 }
 
@@ -424,7 +354,7 @@ div.rendered_html tbody tr:hover {
 }
 </style>
 <div class="section" id="List-Comprehensions">
-<h1>List Comprehensions<a class="headerlink" href="#List-Comprehensions" title="Permalink to this headline">¶</a></h1>
+<h1>List Comprehensions<a class="headerlink" href="#List-Comprehensions" title="Permalink to this headline"></a></h1>
 <div class="line-block">
 <div class="line">List Comprehensions provide an elegant way to create new lists.</div>
 <div class="line">The following shows the basic structure of a list comprehension:</div>
@@ -433,8 +363,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>[x for x in [1, 2, 3, 4]]
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>[x for x in [1, 2, 3, 4]]
 </pre></div>
 </div>
 </div>
@@ -452,8 +381,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>l = []
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>l = []
 for i in range(1, 10):
     l.append(i)
 l
@@ -474,8 +402,7 @@ l
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>[i for i in range(1, 10)]
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>[i for i in range(1, 10)]
 </pre></div>
 </div>
 </div>
@@ -489,7 +416,7 @@ l
 </pre></div></div>
 </div>
 <div class="section" id="STUDENTS-10-MINUTES-TASK">
-<h2>STUDENTS 10 MINUTES TASK<a class="headerlink" href="#STUDENTS-10-MINUTES-TASK" title="Permalink to this headline">¶</a></h2>
+<h2>STUDENTS 10 MINUTES TASK<a class="headerlink" href="#STUDENTS-10-MINUTES-TASK" title="Permalink to this headline"></a></h2>
 <p><strong>(Ex 1: Alphabet List Comprehensions)</strong></p>
 <ol class="arabic simple">
 <li><p>Create a list of capital letters in the english alphabet</p></li>
@@ -498,14 +425,13 @@ l
 </ol>
 </div>
 <div class="section" id="if,-else">
-<h2>if, else<a class="headerlink" href="#if,-else" title="Permalink to this headline">¶</a></h2>
+<h2>if, else<a class="headerlink" href="#if,-else" title="Permalink to this headline"></a></h2>
 <p><strong>if</strong></p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>[x for x in range(1, 10) if x%2 == 0]
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>[x for x in range(1, 10) if x%2 == 0]
 </pre></div>
 </div>
 </div>
@@ -523,8 +449,7 @@ l
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>[x  if x%2 == 0 else &#39;un-even&#39;  for x in range(1, 10)]
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>[x  if x%2 == 0 else &#39;un-even&#39;  for x in range(1, 10)]
 </pre></div>
 </div>
 </div>
@@ -539,14 +464,13 @@ l
 </div>
 </div>
 <div class="section" id="Nested-for-loops">
-<h2>Nested for loops<a class="headerlink" href="#Nested-for-loops" title="Permalink to this headline">¶</a></h2>
+<h2>Nested for loops<a class="headerlink" href="#Nested-for-loops" title="Permalink to this headline"></a></h2>
 <p>Like you can do a nested for loop</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>l = []
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>l = []
 for i in range(3):
     for j in range(2):
         l.append((i, j))
@@ -568,8 +492,7 @@ l
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>[(i,j) for i in range(3) for j in range(2)]
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>[(i,j) for i in range(3) for j in range(2)]
 </pre></div>
 </div>
 </div>
@@ -584,7 +507,7 @@ l
 </div>
 </div>
 <div class="section" id="id1">
-<h2>STUDENTS 10 MINUTES TASK<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>STUDENTS 10 MINUTES TASK<a class="headerlink" href="#id1" title="Permalink to this headline"></a></h2>
 <p><strong>Ex 2: Clothes List Comprehension</strong></p>
 <ol class="arabic simple">
 <li><p>From 2 lists, using a list comprehension, create a list containing:</p></li>
@@ -593,8 +516,7 @@ l
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>[(&#39;Black&#39;, &#39;s&#39;), (&#39;Black&#39;, &#39;m&#39;), (&#39;Black&#39;, &#39;l&#39;), (&#39;Black&#39;, &#39;xl&#39;), (&#39;White&#39;, &#39;s&#39;), (&#39;White&#39;, &#39;m&#39;), (&#39;White&#39;, &#39;l&#39;), (&#39;White&#39;, &#39;xl&#39;)]
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>[(&#39;Black&#39;, &#39;s&#39;), (&#39;Black&#39;, &#39;m&#39;), (&#39;Black&#39;, &#39;l&#39;), (&#39;Black&#39;, &#39;xl&#39;), (&#39;White&#39;, &#39;s&#39;), (&#39;White&#39;, &#39;m&#39;), (&#39;White&#39;, &#39;l&#39;), (&#39;White&#39;, &#39;xl&#39;)]
 </pre></div>
 </div>
 </div>
@@ -618,8 +540,7 @@ l
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>colors = [&#39;Black&#39;, &#39;White&#39;]
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>colors = [&#39;Black&#39;, &#39;White&#39;]
 sizes = [&#39;s&#39;, &#39;m&#39;, &#39;l&#39;, &#39;xl&#39;]
 </pre></div>
 </div>
@@ -630,18 +551,17 @@ sizes = [&#39;s&#39;, &#39;m&#39;, &#39;l&#39;, &#39;xl&#39;]
 </div>
 </div>
 <div class="section" id="Modules">
-<h1>Modules<a class="headerlink" href="#Modules" title="Permalink to this headline">¶</a></h1>
+<h1>Modules<a class="headerlink" href="#Modules" title="Permalink to this headline"></a></h1>
 <div class="section" id="Build-in-Modules">
-<h2>Build in Modules<a class="headerlink" href="#Build-in-Modules" title="Permalink to this headline">¶</a></h2>
+<h2>Build in Modules<a class="headerlink" href="#Build-in-Modules" title="Permalink to this headline"></a></h2>
 </div>
 <div class="section" id="The-import-statement">
-<h2>The import statement<a class="headerlink" href="#The-import-statement" title="Permalink to this headline">¶</a></h2>
+<h2>The import statement<a class="headerlink" href="#The-import-statement" title="Permalink to this headline"></a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>import sys
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import sys
 </pre></div>
 </div>
 </div>
@@ -649,8 +569,7 @@ sizes = [&#39;s&#39;, &#39;m&#39;, &#39;l&#39;, &#39;xl&#39;]
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>import sys
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import sys
 
 def greeting(x):
     print(x)
@@ -666,19 +585,18 @@ greeting(sys.argv)
 </div>
 </div>
 <div class="section" id="id2">
-<h2>STUDENTS 10 MINUTES TASK<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2>STUDENTS 10 MINUTES TASK<a class="headerlink" href="#id2" title="Permalink to this headline"></a></h2>
 <p><strong>Ex 4: Sys module exercise</strong></p>
 <p>Create a commandline tool that checks if the required aguments are present when you run the program, and if not tells you what is missing to run the program.</p>
 <p>So if you run <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">script.py</span></code> the program should print out an error saying <code class="docutils literal notranslate"><span class="pre">Usage:</span> <span class="pre">python</span> <span class="pre">script.py</span> <span class="pre">[-it]{--rm}</span></code> where the <strong>[]</strong> means required and the <strong>{}</strong> means optional.</p>
 </div>
 <div class="section" id="OS-Module">
-<h2>OS Module<a class="headerlink" href="#OS-Module" title="Permalink to this headline">¶</a></h2>
+<h2>OS Module<a class="headerlink" href="#OS-Module" title="Permalink to this headline"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[44]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>import os
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import os
 os.listdir()
 </pre></div>
 </div>
@@ -708,8 +626,7 @@ os.listdir()
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>os.mkdir(&#39;Test&#39;)
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>os.mkdir(&#39;Test&#39;)
 os.chdir(&#39;Test&#39;)
 os.rmdir(&#39;Test&#39;)
 
@@ -719,11 +636,11 @@ os.rmdir(&#39;Test&#39;)
 </div>
 </div>
 <div class="section" id="id3">
-<h2>STUDENTS 10 MINUTES TASK<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h2>STUDENTS 10 MINUTES TASK<a class="headerlink" href="#id3" title="Permalink to this headline"></a></h2>
 <p><strong>Ex 5: OS Module Exercise</strong></p>
 </div>
 <div class="section" id="Do-the-following-task-using-the-os-module">
-<h2>Do the following task using the os module<a class="headerlink" href="#Do-the-following-task-using-the-os-module" title="Permalink to this headline">¶</a></h2>
+<h2>Do the following task using the os module<a class="headerlink" href="#Do-the-following-task-using-the-os-module" title="Permalink to this headline"></a></h2>
 <ol class="arabic simple">
 <li><p>create a folder and name the folder ‘os_exercises.’</p></li>
 <li><p>In that folder create a file. Name the file ‘exercise.py’</p></li>
@@ -733,7 +650,7 @@ os.rmdir(&#39;Test&#39;)
 </ol>
 </div>
 <div class="section" id="Subprocess-module">
-<h2>Subprocess module<a class="headerlink" href="#Subprocess-module" title="Permalink to this headline">¶</a></h2>
+<h2>Subprocess module<a class="headerlink" href="#Subprocess-module" title="Permalink to this headline"></a></h2>
 <p>Run unix commands through python</p>
 <div class="line-block">
 <div class="line">import subprocess</div>
@@ -746,7 +663,7 @@ os.rmdir(&#39;Test&#39;)
 </div>
 </div>
 <div class="section" id="id4">
-<h2>Subprocess module<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<h2>Subprocess module<a class="headerlink" href="#id4" title="Permalink to this headline"></a></h2>
 <p>Run git commands through python</p>
 <div class="line-block">
 <div class="line">import subprocess</div>
@@ -756,9 +673,9 @@ os.rmdir(&#39;Test&#39;)
 </div>
 </div>
 <div class="section" id="Requests-module-(3rd-party)">
-<h1>Requests module (3rd party)<a class="headerlink" href="#Requests-module-(3rd-party)" title="Permalink to this headline">¶</a></h1>
+<h1>Requests module (3rd party)<a class="headerlink" href="#Requests-module-(3rd-party)" title="Permalink to this headline"></a></h1>
 <div class="section" id="Have-to-be-installed-by:">
-<h2>Have to be installed by:<a class="headerlink" href="#Have-to-be-installed-by:" title="Permalink to this headline">¶</a></h2>
+<h2>Have to be installed by:<a class="headerlink" href="#Have-to-be-installed-by:" title="Permalink to this headline"></a></h2>
 <blockquote>
 <div><p>pip install requests</p>
 </div></blockquote>
@@ -774,7 +691,7 @@ os.rmdir(&#39;Test&#39;)
 <p>res.text</p>
 </div>
 <div class="section" id="Download-Images">
-<h2>Download Images<a class="headerlink" href="#Download-Images" title="Permalink to this headline">¶</a></h2>
+<h2>Download Images<a class="headerlink" href="#Download-Images" title="Permalink to this headline"></a></h2>
 <p>import requests</p>
 <p>f = requests.get(‘<a class="reference external" href="https://kea.dk/images/resources/logo-main-black-single.png">https://kea.dk/images/resources/logo-main-black-single.png</a>’, allow_redirects=True)</p>
 <div class="line-block">
@@ -785,8 +702,7 @@ os.rmdir(&#39;Test&#39;)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
@@ -795,49 +711,30 @@ os.rmdir(&#39;Test&#39;)
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        
-        &copy; Copyright 2022, Claus Bove
-
-    </p>
+    <p>&#169; Copyright 2022, Claus Bove.</p>
   </div>
-    
-    
-    
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
-    
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

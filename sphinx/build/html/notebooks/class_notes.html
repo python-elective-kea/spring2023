@@ -1,68 +1,34 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Teaching notes OOP in python &mdash; Introduction to python 4.0.0 documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-
-  
-  
-  
-  
-
-  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teaching notes OOP in python &mdash; Introduction to python 4.0.0 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/language_data.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "tex2jax_ignore|mathjax_ignore|document", "processClass": "tex2jax_process|mathjax_process|math|output_area"}})</script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
-            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Introduction to python
-          
-
-          
+            <a href="../index.html" class="icon icon-home"> Introduction to python
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -70,18 +36,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../about.html">About this elective</a></li>
@@ -89,6 +44,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../cheatsheet.html">Commandline Cheatsheet</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ses1.html">Session 1 - Introduction to python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ses2.html">Session 2 - Data Structures: List &amp; Tuples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ses3a.html">Session 3 - Datastructures: Sets &amp; Dictionaries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ses3.html">Session 3 - Mandatory assignment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ses4.html">Session 4 - List comprehensions, Modules</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ses5.html">Session 5 - Utilities and Modules</a></li>
@@ -103,91 +59,64 @@
 <li class="toctree-l1"><a class="reference internal" href="../ses14-15.html">Session 14 - Exam preperation</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Introduction to python</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-        
       <li>Teaching notes OOP in python</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/python-elective-kea/spring2022/blob/master/sphinx/source/notebooks/class_notes.ipynb" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput.container,
-div.nbinput.container div.prompt,
-div.nbinput.container div.input_area,
-div.nbinput.container div[class*=highlight],
-div.nbinput.container div[class*=highlight] pre,
-div.nboutput.container,
-div.nboutput.container div.prompt,
-div.nboutput.container div.output_area,
-div.nboutput.container div[class*=highlight],
-div.nboutput.container div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
 }
 
 /* avoid gaps between output lines */
@@ -288,7 +217,7 @@ div.nboutput.container div.output_area {
 div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
@@ -354,6 +283,7 @@ div.nboutput.container div.output_area.rendered_html,
 div.nboutput.container div.output_area > div.output_javascript,
 div.nboutput.container div.output_area:not(.rendered_html) > img{
     padding: 5px;
+    margin: 0;
 }
 
 /* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
@@ -363,7 +293,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
-.prompt a.copybtn {
+.prompt .copybtn {
     display: none;
 }
 
@@ -424,15 +354,14 @@ div.rendered_html tbody tr:hover {
 }
 </style>
 <div class="section" id="Teaching-notes-OOP-in-python">
-<h1>Teaching notes OOP in python<a class="headerlink" href="#Teaching-notes-OOP-in-python" title="Permalink to this headline">¶</a></h1>
+<h1>Teaching notes OOP in python<a class="headerlink" href="#Teaching-notes-OOP-in-python" title="Permalink to this headline"></a></h1>
 <div class="section" id="Declaration-of-a-class">
-<h2>Declaration of a class<a class="headerlink" href="#Declaration-of-a-class" title="Permalink to this headline">¶</a></h2>
+<h2>Declaration of a class<a class="headerlink" href="#Declaration-of-a-class" title="Permalink to this headline"></a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>class Person:
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>class Person:
     pass
 </pre></div>
 </div>
@@ -442,20 +371,18 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>p = Person()
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>p = Person()
 </pre></div>
 </div>
 </div>
 </div>
 <div class="section" id="Creating-an-initializer">
-<h2>Creating an initializer<a class="headerlink" href="#Creating-an-initializer" title="Permalink to this headline">¶</a></h2>
+<h2>Creating an initializer<a class="headerlink" href="#Creating-an-initializer" title="Permalink to this headline"></a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>class Person:
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>class Person:
     def __init__(self):
         pass
 </pre></div>
@@ -468,7 +395,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <div class="section" id="Instance-and-class-variables">
-<h2>Instance and class variables<a class="headerlink" href="#Instance-and-class-variables" title="Permalink to this headline">¶</a></h2>
+<h2>Instance and class variables<a class="headerlink" href="#Instance-and-class-variables" title="Permalink to this headline"></a></h2>
 <div class="line-block">
 <div class="line">Instance attributes are defined in the <strong>init</strong> method or in another method.</div>
 <div class="line">They are denoted with the <strong>self</strong> prefix.</div>
@@ -477,8 +404,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>class Person:
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>class Person:
     def __init__(self, name):
         self.name = name # -&gt; instance variable
 </pre></div>
@@ -489,8 +415,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>class Person:
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>class Person:
 
     type = &#39;Mammel&#39; # class variable (no self in front of)
 
@@ -504,8 +429,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>p = Person(&#39;Claus&#39;)
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>p = Person(&#39;Claus&#39;)
 </pre></div>
 </div>
 </div>
@@ -513,8 +437,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>p.type
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>p.type
 </pre></div>
 </div>
 </div>
@@ -531,8 +454,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>p.name
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>p.name
 </pre></div>
 </div>
 </div>
@@ -549,8 +471,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>s = Person(&#39;Reptile&#39;)
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>s = Person(&#39;Reptile&#39;)
 </pre></div>
 </div>
 </div>
@@ -558,8 +479,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>s.type
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>s.type
 </pre></div>
 </div>
 </div>
@@ -576,8 +496,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>s.name
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>s.name
 </pre></div>
 </div>
 </div>
@@ -591,14 +510,13 @@ div.rendered_html tbody tr:hover {
 </pre></div></div>
 </div>
 <div class="section" id="Add-/-Change-instance-variables-after-declaration">
-<h3>Add / Change instance variables after declaration<a class="headerlink" href="#Add-/-Change-instance-variables-after-declaration" title="Permalink to this headline">¶</a></h3>
+<h3>Add / Change instance variables after declaration<a class="headerlink" href="#Add-/-Change-instance-variables-after-declaration" title="Permalink to this headline"></a></h3>
 <p>You can at runtime add variables (and methods) to your object</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>p = Person(&#39;Claus&#39;)
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>p = Person(&#39;Claus&#39;)
 </pre></div>
 </div>
 </div>
@@ -606,8 +524,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>p.__dict__   # __dict__ is used to get a dictionary of all instance variables
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>p.__dict__   # __dict__ is used to get a dictionary of all instance variables
 </pre></div>
 </div>
 </div>
@@ -624,8 +541,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>p.age = 23
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>p.age = 23
 p.sirname = &#39;Henningen&#39;
 </pre></div>
 </div>
@@ -634,8 +550,7 @@ p.sirname = &#39;Henningen&#39;
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>p.__dict__
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>p.__dict__
 </pre></div>
 </div>
 </div>
@@ -650,13 +565,12 @@ p.sirname = &#39;Henningen&#39;
 </div>
 </div>
 <div class="section" id="Add-/-Change-class-variables-after-declaration">
-<h3>Add / Change class variables after declaration<a class="headerlink" href="#Add-/-Change-class-variables-after-declaration" title="Permalink to this headline">¶</a></h3>
+<h3>Add / Change class variables after declaration<a class="headerlink" href="#Add-/-Change-class-variables-after-declaration" title="Permalink to this headline"></a></h3>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>Person.name = &#39;Kim&#39;
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>Person.name = &#39;Kim&#39;
 </pre></div>
 </div>
 </div>
@@ -665,8 +579,7 @@ p.sirname = &#39;Henningen&#39;
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>class Animal:
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>class Animal:
     name = &#39;Fido&#39;
 </pre></div>
 </div>
@@ -675,8 +588,7 @@ p.sirname = &#39;Henningen&#39;
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>dog = Animal()
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>dog = Animal()
 cat = Animal()
 </pre></div>
 </div>
@@ -685,8 +597,7 @@ cat = Animal()
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>dog.name
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>dog.name
 </pre></div>
 </div>
 </div>
@@ -703,8 +614,7 @@ cat = Animal()
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>cat.name
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>cat.name
 </pre></div>
 </div>
 </div>
@@ -721,8 +631,7 @@ cat = Animal()
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>Animal.name = &#39;Esther&#39;
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>Animal.name = &#39;Esther&#39;
 </pre></div>
 </div>
 </div>
@@ -730,8 +639,7 @@ cat = Animal()
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>dog.name
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>dog.name
 </pre></div>
 </div>
 </div>
@@ -748,8 +656,7 @@ cat = Animal()
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>cat.name
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>cat.name
 </pre></div>
 </div>
 </div>
@@ -767,8 +674,7 @@ cat = Animal()
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>cat.name = &#39;Hannah&#39;
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>cat.name = &#39;Hannah&#39;
 </pre></div>
 </div>
 </div>
@@ -776,8 +682,7 @@ cat = Animal()
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>dog.name
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>dog.name
 </pre></div>
 </div>
 </div>
@@ -794,8 +699,7 @@ cat = Animal()
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>cat.name
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>cat.name
 </pre></div>
 </div>
 </div>
@@ -812,8 +716,7 @@ cat = Animal()
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[43]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>cat.__dict__
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>cat.__dict__
 </pre></div>
 </div>
 </div>
@@ -830,8 +733,7 @@ cat = Animal()
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[44]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>dog.__dict__
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>dog.__dict__
 </pre></div>
 </div>
 </div>
@@ -847,15 +749,14 @@ cat = Animal()
 </div>
 </div>
 <div class="section" id="&#64;Overloading-(or-this-is-not-realy-what-we-do)">
-<h2>&#64;Overloading (or this is not realy what we do)<a class="headerlink" href="#@Overloading-(or-this-is-not-realy-what-we-do)" title="Permalink to this headline">¶</a></h2>
+<h2>&#64;Overloading (or this is not realy what we do)<a class="headerlink" href="#@Overloading-(or-this-is-not-realy-what-we-do)" title="Permalink to this headline"></a></h2>
 <p>We will use *args and kwargs for this and you can read about it <a class="reference external" href="https://realpython.com/python-kwargs-and-args/">here</a></p>
 <p>“Overloading” in python is done by using the *args, and kwargs arguments</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[55]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>def __init__(self, *args):
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def __init__(self, *args):
     if len(args) == 1:
         self.name = args[0]
     elif len(args) == 2:
@@ -871,8 +772,7 @@ cat = Animal()
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>def __init__(self, name=None, age=None):
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def __init__(self, name=None, age=None):
     if name != None:
         self.name = name
     if age != None:
@@ -883,14 +783,13 @@ cat = Animal()
 </div>
 </div>
 <div class="section" id="Inheritance">
-<h1>Inheritance<a class="headerlink" href="#Inheritance" title="Permalink to this headline">¶</a></h1>
+<h1>Inheritance<a class="headerlink" href="#Inheritance" title="Permalink to this headline"></a></h1>
 <p>The most simple approach to inheritance in python is:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>class Person:
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>class Person:
     def __init__(self):
         self.name = &#39;Claus&#39;
 </pre></div>
@@ -900,8 +799,7 @@ cat = Animal()
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>class Student(Person):
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>class Student(Person):
    pass
 </pre></div>
 </div>
@@ -910,8 +808,7 @@ cat = Animal()
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>student = Student()
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>student = Student()
 student.name
 </pre></div>
 </div>
@@ -930,8 +827,7 @@ student.name
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>class Person:
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>class Person:
     def __init__(self, name):
         self.name = name
 </pre></div>
@@ -941,8 +837,7 @@ student.name
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>class Student(Person):
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>class Student(Person):
     def __init__(self, name):
         super().__init__(name)
 </pre></div>
@@ -952,8 +847,7 @@ student.name
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>s = Student(&#39;Claus&#39;)
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>s = Student(&#39;Claus&#39;)
 </pre></div>
 </div>
 </div>
@@ -962,8 +856,7 @@ student.name
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>class Instructor:
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>class Instructor:
     def __init__(self, course):
         pass
 
@@ -980,49 +873,30 @@ s = Student(&#39;Claus&#39;, &#39;Co23&#39;)
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        
-        &copy; Copyright 2022, Claus Bove
-
-    </p>
+    <p>&#169; Copyright 2022, Claus Bove.</p>
   </div>
-    
-    
-    
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
-    
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>
