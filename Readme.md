@@ -7,8 +7,7 @@
 Or **view local** by cloning this repository
 
 ````
-  git clone https://github.com/python-elective-kea/spring2022.git
-
+  git clone https://github.com/python-elective-kea/fall2022.git
 ````
 Open the index.html page in your browser from the "sphinx -> build" folder and use the website.
 
@@ -21,14 +20,12 @@ If you want to work with the source files
 
 ````
 $ docker run --rm -v /path/to/document:/docs sphinxdoc/sphinx:3.3.0 make html
-
 ````
 
 ### Install Sphinx
 
 ````
   $ pip install -U sphinx
-
 ````
 
 And read the documentations here: https://www.sphinx-doc.org/en/master/contents.html  
