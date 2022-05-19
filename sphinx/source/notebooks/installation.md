@@ -127,7 +127,7 @@ You could also choose to use an IDE instead of a text editor.
 
 Jetbrains has an IDE called [PyCharm](https://www.jetbrains.com/pycharm/) which is a good choice, but you could also use other ones like IntelliJ of Visual Studio e.i. 
 
-**NOTE:**  Using an IDE gives you a more automated workflow than using a text editor. But an IDE does not in this class support the learning goals as well as if you use the more manual approach with a text editor. So even though it will seam like an easier development environment, an IDE will be a more difficult approach in order to fulfill the learning goals, or in worst case you will not even notice that you did not learn what you should before it is to late. So in this elective the recomendation is to us VS Code.  
+**NOTE:**  Using an IDE gives you a more automated workflow than using a text editor. But an IDE does not in this class support the learning goals as well as if you use the more manual approach with a text editor and a CLI (command line interface). So even though it will seam like an easier development environment, an IDE will be a more difficult approach in order to fulfill the learning goals, or in worst case you will not even notice that you did not learn what you should before it is to late. So in this elective the recomendation is to us VS Code.  
 
 
 ## 3. Git & Github
