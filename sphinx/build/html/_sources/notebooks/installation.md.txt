@@ -1,9 +1,13 @@
 # Installations
 This document will describe what you should install in order to follow this elective.   
 
-You will not install python dirrectly on your computer, but instead throughout this semester run docker containers build opon different kinds of python images.    
+You will not install python directly on your computer, but instead run docker containers build open different kinds of python images.    
 
-The benifit of this appcoach is that we all, no matter what OS we normally use, can use the exact same development enviroment. This also makes it easier to work together across diffenret OS in groups. It also will teach you how to work with an industry standart, so you know this development environment and approach when you start to work after your education has ended.  
+The benefit of this approach is that we all, no matter what OS we normally use, can use the exact same development environment, and have the exact  same dependencies installed for our applications.  
+This makes it easier to work together across different OS in groups (at work or in class). It also will teach you how to work with an industry standard, so you know this development environment and approach when you start to work after your education has ended.  
+
+
+
 
 You probably already have installed some of the following applications, but if you do not you should now install:
 
@@ -104,12 +108,26 @@ python --version
 Python 3.8.2
 ````
 
-## 2. Download and install a text editor (VS Code)
+## 2. Download and install a text editor
 Download and install a text editor. There are many good ones, and you need at least one, but you decide which one.   
 
 A good option is VS Code. You can download it from the following source: 
 
 * [https://code.visualstudio.com/](https://code.visualstudio.com/)
+
+**The recomendation for this elective is to use VS Code.**
+
+Other popular text editors are:
+* Atom
+* Sublime Text
+* Notepad++
+* Vim
+
+You could also choose to use an IDE instead of a text editor. 
+
+Jetbrains has an IDE called [PyCharm](https://www.jetbrains.com/pycharm/) which is a good choice, but you could also use other ones like IntelliJ of Visual Studio e.i. 
+
+**NOTE:**  Using an IDE gives you a more automated workflow than using a text editor. But an IDE does not in this class support the learning goals as well as if you use the more manual approach with a text editor. So even though it will seam like an easier development environment, an IDE will be a more difficult approach in order to fulfill the learning goals, or in worst case you will not even notice that you did not learn what you should before it is to late. So in this elective the recomendation is to us VS Code.  
 
 
 ## 3. Git & Github
