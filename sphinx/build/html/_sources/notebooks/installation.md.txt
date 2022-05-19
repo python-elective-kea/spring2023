@@ -111,18 +111,20 @@ Python 3.8.2
 ## 2. Download and install a text editor
 Download and install a text editor. There are many good ones, and you need at least one, but you decide which one.   
 
+### VS Code
 A good option is VS Code. You can download it from the following source: 
 
 * [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
 **The recomendation for this elective is to use VS Code.**
 
-Other popular text editors are:
+#### Other popular text editors are:
 * Atom
 * Sublime Text
 * Notepad++
 * Vim
 
+#### IDE´s
 You could also choose to use an IDE instead of a text editor. 
 
 Jetbrains has an IDE called [PyCharm](https://www.jetbrains.com/pycharm/) which is a good choice, but you could also use other ones like IntelliJ of Visual Studio e.i. 
