@@ -133,8 +133,8 @@
 <div class="section" id="check-if-everything-is-installed">
 <h3>Check if everything is installed<a class="headerlink" href="#check-if-everything-is-installed" title="Permalink to this headline"></a></h3>
 <p>In your terminal or powershell you should type <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">--version</span></code> and get the following result.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>	$ docker --version
-	Docker version 19.03.8, build afacb8b
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>	$ docker --version 
+	Docker version 20.10.17, build 100c701
 </pre></div>
 </div>
 <p>If you do not see this, get an error or like, then you still de not have docker installed on your system.</p>
@@ -163,7 +163,7 @@
 <h3>Run your Second Docker container (Python).<a class="headerlink" href="#run-your-second-docker-container-python" title="Permalink to this headline"></a></h3>
 <p>The second Image you should create a container from is an official python docker image.</p>
 <p>Run the following command in your termianl to download the image and run a container.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>	$ docker run -it --rm python bash
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>	$ docker run -it --rm python:3.9.13 bash
 </pre></div>
 </div>
 <p>With:</p>
@@ -190,7 +190,7 @@
 </li>
 </ul>
 <p>After downloading has finnished, and run has executed you should see something like this in your terminal.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>	$ docker run -it --rm python bash
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>	$ docker run -it --rm python:3.9.13 bash
 	root@a7991e5db4cd:/#
 </pre></div>
 </div>

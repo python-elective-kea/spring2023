@@ -32,9 +32,8 @@ Follow these steps to solve these problems.
 In your terminal or powershell you should type ``` docker --version ``` and get the following result.
 
 ````
-	$ docker --version
-	Docker version 19.03.8, build afacb8b
-
+	$ docker --version 
+	Docker version 20.10.17, build 100c701
 ````
 If you do not see this, get an error or like, then you still de not have docker installed on your system.
 
@@ -72,7 +71,7 @@ Run the following command in your termianl to download the image and run a conta
 
 
 ````
-	$ docker run -it --rm python bash
+	$ docker run -it --rm python:3.9.13 bash
 ````
 
 With:   
@@ -89,7 +88,7 @@ With:
 After downloading has finnished, and run has executed you should see something like this in your terminal.
 
 ````
-	$ docker run -it --rm python bash
+	$ docker run -it --rm python:3.9.13 bash
 	root@a7991e5db4cd:/#
 ````
 

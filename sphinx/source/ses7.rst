@@ -18,7 +18,7 @@ Materials
 * `Properties vs. Getters and Setters <https://www.python-course.eu/python3_properties.php>`_
 * `Private attributes and methods <https://www.bogotobogo.com/python/python_private_attributes_methods.php>`_
 * `Notebook on properties <notebooks/OOP_Encapsulation_Propeties.rst>`_
-* `Code examples from teachings <https://github.com/python-elective-kea/spring2022-code-examples-from-teachings/tree/master/ses7>`_
+* `Code examples from teachings <https://github.com/python-elective-kea/fall2022-code-examples-from-teachings/tree/master/ses7>`_
 
 
 

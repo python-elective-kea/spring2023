@@ -16,11 +16,12 @@ After this week you will be able to:
 
 Materials
 ---------
-* `(Notebook) <notebooks/notes_docker_requirements_webscrabing.ipynb>`_
+* `Notebook from teachings <notebooks/notes_docker_requirements_webscrabing.ipynb>`_
+* `Best pratice - working in teams with docker, github <notebooks/best_practice_docker_github.ipynb>`_
 * `Beautiful Soup Documentation <https://www.crummy.com/software/BeautifulSoup/bs4/doc/>`_
 * `Html to markdown <notebooks/html_markdown.rst>`_
 * `Docker Commands <cheatsheet.rst#session-5-utilities-and-modules>`_
-* `Code examples from today <https://github.com/python-elective-kea/spring2022-code-examples-from-teachings/tree/master/ses5>`_
+* `Code examples from today <https://github.com/python-elective-kea/fall2022-code-examples-from-teachings/tree/master/ses5>`_
 
 Exercises
 ---------

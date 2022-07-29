@@ -33,7 +33,7 @@ Materials
 * `Python’s Requests Library <https://realpython.com/python-requests/>`_
 * `Downloading Files from URLs in Python <https://www.codementor.io/aviaryan/downloading-files-from-urls-in-python-77q3bs0un>`_ 
 * `Notebook <notebooks/Notes-Contextmanager-ListComp-modules.ipynb>`_
-* `Code examples from teachings <https://github.com/python-elective-kea/spring2022-code-examples-from-teachings/tree/master/ses4>`_
+* `Code examples from teachings <https://github.com/python-elective-kea/fall2022-code-examples-from-teachings/tree/master/ses4>`_
 
 Exercises
 ---------
