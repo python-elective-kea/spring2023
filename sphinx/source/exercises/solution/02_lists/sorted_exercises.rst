@@ -7,6 +7,12 @@ Ex 1: Build in functions on lists
 
 No solution for this exercise - Just try it out.   
 
+Ex 1.1: Is it a tuple or a list?
+--------------------------------
+
+.. literalinclude:: is_it_a.py
+        :linenos:
+        
 Ex 2: Sort a Text
 -----------------
 
