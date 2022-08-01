@@ -64,7 +64,7 @@ Figure out more on your own and practice this a lot!
 Ex 1: Build-in functions on lists
 ---------------------------------
 
-| Create a list like this ```names = ['George', 'Bejamin', 'Thomas', 'John']```    
+| Create a list like this: :code:`names = ['George', 'Bejamin', 'Thomas', 'John']`    
 | Look at this list of pythons `build in functions <https://docs.python.org/3/library/functions.html>`_.
 | Try all of these in the interpretor (on a list you create). e.g  :code:`len(names)`   
 | Not all will work on lists, but try it out and see what works. 
