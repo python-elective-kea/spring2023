@@ -935,7 +935,7 @@
    },
    "source": [
     "## Methods\n",
-    "Methods is called are called like this:"
+    "Methods are called like this:"
    ]
   },
   {

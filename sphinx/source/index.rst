@@ -20,8 +20,8 @@ Underneath you can see a content overview about this site, and you will by follo
    cheatsheet
    ses1
    ses2
-   ses3a
    ses3
+   ses3a
    ses4
    ses5
    ses6
