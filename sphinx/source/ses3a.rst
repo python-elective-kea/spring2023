@@ -1,7 +1,10 @@
-Session 3 - Data Structures: Sets & Dictionaries
-================================================
+Session 3a - Data Structures & List Comprehensions
+==================================================
 
-
+Today we will start by talking about your mandatory assignment from last week.   
+We will then look at different kinds of data sets and determine what data structure could be used for representing this specific kind of data.    
+We will also look at Pythons collection module and see how to use this on our data.     
+Last we will work with list comprehensions.    
 
 
 Learning goals
@@ -35,7 +38,7 @@ Ex1: Count letters and words
 ----------------------------
 
 By importing the `collections <https://docs.python.org/3/library/collections.html#module-collections>`_ module you have access to the `Counter object <https://docs.python.org/3/library/collections.html#counter-objects>`_ .    
-Use this object to count the occorenses of each words in this `text file <>`_ .    
+Use this object to count the occurrences of each words in this `text file <>`_ .    
 
 
 
