@@ -1,22 +1,9 @@
-Session 12 - Follow up / recap  
-==============================
-
-Today we will do a recap on what we worked with this semster. We will also look at the parts we did not cover earlier this semester. 
+Session 12 - Mandatory Assignment 2
+===================================
 
 
-Learning goals
--------------- 
+This mandatory assignment will be an assignment you should do during the 3 hours this session takes. So there will not be any homework. 
 
-Materials
----------
+The assignment and the handin folder can be found on Fronter.
 
-* `Code from today <https://github.com/python-elective-kea/fall2022-code-examples-from-teachings/tree/master/ses12>`_
-
-
-..
-        Todays task is to (easy) develop a web api using **Flask**, **Swagger**, **Sqlite**. You will deploy it at **Heroku** through **github** and the environment you will do this in will be **docker**.
-
-        Materials
-        ---------
-        * `Working with APIs using Flask, Flask-RESTPlus and Swagger UI <https://towardsdatascience.com/working-with-apis-using-flask-flask-restplus-and-swagger-ui-7cf447deda7f>`_
-
+The assignment can be done from home.
