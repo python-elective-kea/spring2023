@@ -25,6 +25,28 @@ Ex1: Wordcount
 --------------
 `solution <exercises/solution/03_set_dict/dicts.rst>`_
 
+Copy/Paste the code below into a file and call it words.py
+
+Do the exercises and run them.
+
+You can use either of these files for testing your solution.
+
+* `small.txt <small.txt>`_
+* `alice.txt <alice.txt>`_    
+
+
+words.py
+--------
+
+.. literalinclude:: words.py
+   :linenos:
+   :language: python
+
+
+
+
+
+
 * `words.py <exercises/dict_exercises/count_words_in_file/words.py>`_
 * `small.txt <exercises/dict_exercises/count_words_in_file/smalltxt>`_
 * `alice.txt <exercises/dict_exercises/count_words_in_file/alice.txt>`_
@@ -34,6 +56,18 @@ Ex2: Log Puzzle Python Exercise
 -------------------------------
 * `Log Puzzel <exercises/dict_exercises/logpuzzel/logpuzzel.md>`_
 
+
+----------------------------------
+ExX: Text editor plugin simulation 
+----------------------------------
+
+.. code:
+   s = 'This is just a sample text that could have been a million times longer.\n\nYours Johnny'
+
+1. Count the number of characters **including** blank spaces.
+2. Count the number of characters **excluding** blank spaces. 
+3. Count the number of words.
+   
 ----------------------------
 Ex1: Count letters and words
 ----------------------------
