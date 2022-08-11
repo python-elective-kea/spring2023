@@ -14,6 +14,7 @@ Learning goals
 Materials
 ---------
 * `collections — Container datatypes <https://docs.python.org/3/library/collections.html>`_
+* `Speed of list comprehensions vs for loop <https://stackoverflow.com/questions/30245397/why-is-a-list-comprehension-so-much-faster-than-appending-to-a-list/30245465#30245465>`_
 
 
 Exercises

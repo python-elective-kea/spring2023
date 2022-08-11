@@ -62,13 +62,3 @@ Sphinx commands
    $ docker run --rm -v ${PWD}:/docs sphinx /bin/sh -c 'cd sphinx/; make html'
 
 
------
-Links
------
-
-* `How to Create a Docker Image From a Container <https://www.scalyr.com/blog/create-docker-image/>`_
-
-
-
-
-
