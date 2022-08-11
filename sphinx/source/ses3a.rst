@@ -25,11 +25,9 @@ Ex1: Wordcount
 --------------
 `solution <exercises/solution/03_set_dict/dicts.rst>`_
 
-Copy/Paste the code below into a file and call it words.py
-
-Do the exercises and run them.
-
-You can use either of these files for testing your solution.
+| Copy/Paste the code below into a file and call it words.py
+| Do the exercises and run them.
+| You can use either of these files for testing your solution.
 
 * `small.txt <exercises/dict_exercises/count_words_in_file/small.txt>`_
 * `alice.txt <exercises/dict_exercises/count_words_in_file/small.txt>`_    
