@@ -29,8 +29,8 @@ Ex1: Wordcount
 | Do the exercises and run them.
 | You can use either of these files for testing your solution.
 
-* `small.txt <exercises/dict_exercises/count_words_in_file/small.txt>`_
-* `alice.txt <exercises/dict_exercises/count_words_in_file/small.txt>`_    
+* `small.txt <exercises/dict_exercises/count_words_in_file/small.md>`_
+* `alice.txt <exercises/dict_exercises/count_words_in_file/small.md>`_    
 
 
 **words.py**
