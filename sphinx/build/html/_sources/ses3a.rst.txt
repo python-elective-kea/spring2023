@@ -31,14 +31,14 @@ Do the exercises and run them.
 
 You can use either of these files for testing your solution.
 
-* `small.txt <small.txt>`_
-* `alice.txt <alice.txt>`_    
+* `small.txt <exercises/dict_exercises/count_words_in_file/small.txt>`_
+* `alice.txt <exercises/dict_exercises/count_words_in_file/small.txt>`_    
 
 
-words.py
---------
+**words.py**
 
-.. literalinclude:: words.py
+
+.. literalinclude:: exercises/dict_exercises/count_words_in_file/words.py
    :linenos:
    :language: python
 
