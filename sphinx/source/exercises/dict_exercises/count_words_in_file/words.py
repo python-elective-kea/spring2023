@@ -44,21 +44,10 @@ import sys
 ###
 
 def print_words(filename):
-    # open file with name of parameter
-    f = open(filename)
-    t = f.read()
-    words = t.replace('\n', ' ')
-    words = words.strip()
-    words = words.split(' ')
-
-    print(words)
+    pass
     
-        
-
-
 def print_top(filename):
     pass
-
 
 
 # This basic command line argument parsing code is provided and
