@@ -1,4 +1,4 @@
-
+# ##
 # Solution from video https://www.youtube.com/watch?v=XKu_SEDAykw&t=379s
 # [1, 2, 4, 4] => sum = 8
 # [1, 2, 3, 9] => sum = 8
