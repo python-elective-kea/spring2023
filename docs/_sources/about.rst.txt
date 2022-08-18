@@ -14,22 +14,14 @@ The details of each session can be found by following the links in the meny on t
 
 Course Workload
 ---------------
-
-**This course is 10 ECTS points = 280 hours workload.**
-
-* 20 weeks (until your exam)
-* 14 hours a week
-  
-  * 3 hours teachings
-  * 11 hours homework
-    
+This course is 10 ECTS points which translates to 13 hours pr. week, including classes.
 
 Software Needed for the Course
 ------------------------------
 * A CLI (Terminal, Powershell, Gitbash e.g)
 * Git
 * Docker 
-* A text editor or IDE
+* A text editor or IDE of your own choise.
 
 Course materials
 ----------------
