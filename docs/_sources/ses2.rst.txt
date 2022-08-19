@@ -6,6 +6,7 @@ Today we will work with data structures in python. You will by the end of these 
 List and tuples are two of the build-in datastructures in python.
 
 Lists is a collection that have a resemblense ArrayList in Java. You can append and pop, access its elements through an index.
+
 Learning goals
 --------------
 
