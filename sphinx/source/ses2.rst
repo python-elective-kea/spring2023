@@ -112,6 +112,18 @@ Ex 3: Sort a list
 5. Sort the list based on the last letter in the name.
 6. Sort the list with the names where the letter 'a' is in the name first.
 
+-----------------------------------
+Ex 4: Text editor plugin simulation 
+-----------------------------------
+
+.. code::
+
+   s = 'This is just a sample text that could have been a million times longer.\n\nYours Johnny'
+
+1. Count the number of characters **including** blank spaces.
+2. Count the number of characters **excluding** blank spaces. 
+3. Count the number of words.
+
 -----------
 Ex 4: Files
 -----------
