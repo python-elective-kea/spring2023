@@ -116,6 +116,8 @@ Ex 3: Sort a list
 Ex 4: Text editor plugin simulation 
 -----------------------------------
 
+`Solution <exercises/solution/02_lists/sorted_exercises.rst>`_
+
 .. code::
 
    s = 'This is just a sample text that could have been a million times longer.\n\nYours Johnny'

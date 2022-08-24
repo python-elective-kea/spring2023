@@ -26,6 +26,12 @@ Ex 3: Sort a list
 .. literalinclude:: sort_a_list.py
         :linenos:
 
+Ex 4: Text editor plugin simulation
+-----------------------------------
+
+.. literalinclude:: word_count_plugin.py
+        :linenos:
+
 
 Ex 4: Files
 -----------
