@@ -4,9 +4,9 @@ Before doing these exercises be sure to read : [CommandLineCrashCourse.pdf](../.
 
 ## Necessary files to complete this exercise.
 
-* [ex1.acc](https://github.com/python-elective-kea/fall2021/blob/master/sphinx/source/exercises/unix_commands/ex1.acc)   
-* [ ex1.dat](https://github.com/python-elective-kea/fall2021/blob/master/sphinx/source/exercises/unix_commands/ex1.dat)   
-* [orphans.sp](https://github.com/python-elective-kea/fall2021/blob/master/sphinx/source/exercises/unix_commands/orphans.sp)    
+* [ex1.acc](https://github.com/python-elective-kea/fall2022/blob/master/sphinx/source/exercises/unix_commands/ex1.acc)   
+* [ ex1.dat](https://github.com/python-elective-kea/fall2022/blob/master/sphinx/source/exercises/unix_commands/ex1.dat)   
+* [orphans.sp](https://github.com/python-elective-kea/fall2022/blob/master/sphinx/source/exercises/unix_commands/orphans.sp)    
 
 You can play around with these files as much as you like. If you change or destroy them, just download them again.
 
