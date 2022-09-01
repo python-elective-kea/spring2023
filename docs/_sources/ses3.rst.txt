@@ -3,7 +3,7 @@ Session 3 - Mandatory assignment
 
 Todays lectures will be used for your first mandatory assignment. The assignment is an individual assignment, but you are welcome to work together in solving this. Everybody should hand in individualy though. 
 
-You can work on this asignment from home or you can be at the school. 
+This assignment is online and can be done from home. 
 
 **There will be no normal teachings, and no introduction to this assignment.** 
 
