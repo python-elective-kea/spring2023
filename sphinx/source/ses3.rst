@@ -11,7 +11,7 @@ This assignment is online and can be done from home.
 `Check you solutions agains this <exercises/solution/03_mandatory_set_dicts/Solutions_mandatory_sets_dicts.ipynb>`_
 
 .. note::
-        | `Link to Assignment on fronter  <https://kea-fronter.itslearning.com/LearningToolElement/ViewLearningToolElement.aspx?LearningToolElementId=964731>`_
+        | `Link to Assignment on fronter  <https://kea-fronter.itslearning.com/ContentArea/ContentArea.aspx?LocationID=5501&LocationType=1&ElementID=1025443>`_
         | Start time: Thursday 08:30
         | Hand in latest: **Thursday 8/9 11:45**
         | Peer Review: Hand in latest **Monday 12/9 12:00**
