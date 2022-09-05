@@ -10,16 +10,15 @@ This assignment is online and can be done from home.
 **Solutions**
 `Check you solutions agains this <exercises/solution/03_mandatory_set_dicts/Solutions_mandatory_sets_dicts.ipynb>`_
 
-.. note:: 
-        | 
-        |
-        | 
-        |
-        |
+.. note::
+        | `Link to Assignment on fronter  <https://kea-fronter.itslearning.com/LearningToolElement/ViewLearningToolElement.aspx?LearningToolElementId=964731>`_
+        | Start time: Thursday 08:30
+        | Hand in latest: **Thursday 8/9 11:45**
+        | Peer Review: Hand in latest **Monday 12/9 12:00**
 
 
 The final evaluation of your assignment will be done by Claus and will be either a passed or not passed evaluation. 
 
-** Peer review means that you will have to review on of your fellow students assignment and give feddback. The assignment you should review will be randomly chosen by "Fronter", and you will recieve an email with a link to the assignment you should review. This is part of your mandatory assignment and you will have to do this in order to pass the mandatory assignment.)
+**Peer review** means that you will have to review two of your fellow students assignment and give feddback. The assignment you should review will be randomly chosen by "Fronter", and you will recieve an email with a link to the assignment you should review or if you do nit get an email you can find the links to the assignments in the handin folder. This is part of your mandatory assignment and you will have to do this in order to pass the mandatory assignment.)
 
 
