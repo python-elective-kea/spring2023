@@ -3,6 +3,8 @@ Session 4 - Modules
 
 Today we will look at modules in python. You will build your own modules and use them, and you will learn how to use pythons build in modules. Next week we cary on with 3rd party modules (code made by someone else in the world), and you will learn how to incorporate these in your own code, and learn how to make sure how every body else that will use your code will have access to the same 3. party modules as you and to the right version of this. . 
 
+First we will look at list comprehensions, a condenced way togenerate lists. 
+
 You will on the practical level today, besides comprehensions, work with 4 modules:
 
 * Os module
