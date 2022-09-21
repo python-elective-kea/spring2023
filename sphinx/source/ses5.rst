@@ -94,7 +94,7 @@ Ex 4: Docker'ise' your own projects
 
 When this setup is up and running each group member should: 
 
-* install a new 3rd. party module in the container. (look at pypi.org) 
+* install a new 3rd. party module in the container. (look at [pypi.org](http://pypi.org)) 
 * Create some simple (maybe even stupid) code that makes use of this module
 * do a :code:`pip freeze > requirements.txt`
 * Push the changes to github
