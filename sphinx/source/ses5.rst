@@ -76,9 +76,9 @@ The code you need is something like this:
 .. note::
    
    | The approach is not different from what you have done with Docker and python files so far. 
-   | * You should build a container based on an image (gcc) and 
-   | * You should share a volume `(-v ${PWD}:/docs)` between your host computer and your container where your hello world file are in. 
-   | * You should then compile and run the file in the container. 
+   | - You should build a container based on an image (gcc) and 
+   | - You should share a volume `(-v ${PWD}:/docs)` between your host computer and your container where your hello world file are in. 
+   | - You should then compile and run the file in the container. 
    | Compiling and running a c program is new to you, and you will have investigate that topic. 
 
 
