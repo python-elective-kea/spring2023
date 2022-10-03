@@ -30,8 +30,8 @@ Dockerfile
 #/docs/exercises/solution/04_modules/*
 
 #04 OOP
-/sphinx/build/html/exercises/solution/04_oop/*
-/docs/exercises/solution/04_oop/*
+#/sphinx/build/html/exercises/solution/04_oop/*
+#/docs/exercises/solution/04_oop/*
 
 #05 encapsulation
 /sphinx/build/html/exercises/solution/05_encapsulation/*
