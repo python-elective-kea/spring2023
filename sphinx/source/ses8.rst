@@ -3,7 +3,7 @@ Session 8 - The python datamodel
 
 Today we will look at the python data model. 
 
-After this you will be able to implement code in own classes that allow you to use python built-in functions to interact with these object.
+After this you will be able to implement code in own classes that allow you to use pythons built-in functions or top level syntax to interact with these object.
 
 **Example:**
 
@@ -17,7 +17,7 @@ If you want to be able to use the :code:`in` key word on your object you should 
 Learning goals
 --------------
 
-    * Create your own classes, that behave like any other Python Object, and are able to interact with pythons build in functions. 
+    * Create your own classes, that behave like any other Python Object, and are able to interact with pythons build in functions or top level syntax. 
      
 Materials
 ---------
@@ -29,6 +29,7 @@ Materials
 * `Expert Python Tutorial #2 - Dunder/Magic Methods & The Python Data Model <https://www.youtube.com/watch?v=z11P9sojHuM>`_
 * `Notebook on Datamodel <notebooks/OOP_Encapsulation_Propeties.ipynb#Datamodel>`_
 * `Code examples from teachings <https://github.com/python-elective-kea/fall2022-code-examples-from-teachings/tree/master/ses8>`_
+* [Google Colab](https://colab.research.google.com/)
 
 Exercises
 ---------
@@ -50,7 +51,7 @@ Continue with the deck example and implement the
 
 We look at this together in a short while.
 
-When you a done, take a look at the 2 exercises below and ask your questions when we meet. 
+When you a done, take a look at the 2 exercises below and ask your questions.
 
 
 .. raw:: html
