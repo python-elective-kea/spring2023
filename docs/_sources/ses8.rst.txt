@@ -18,6 +18,7 @@ Learning goals
 --------------
 
     * Create your own classes, that behave like any other Python Object, and are able to interact with pythons build in functions or top level syntax. 
+    * Use Jupyter Notebook as code editor.  
      
 Materials
 ---------
