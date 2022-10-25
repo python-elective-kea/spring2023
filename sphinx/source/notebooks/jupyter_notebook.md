@@ -5,7 +5,8 @@ Jupyter notebooks can be found in various versions, both online and as local ins
 To start a Jupyter Notebook instance with the parent folder as root run: 
 
 ```
-    $ docker run --rm -p 8888:8888 -v "$PWD":/home/jovyan/work jupyter/datascience-notebook 
+    $ docker run --name jupyter -p 8888:8888 -v ${PWD}:/home/jovyan/work  jupyter/base-notebook
+ 
 ```   
 **Note: This image will not work on Macbooks with the M1 chip. Instead you can use an online version of the Jupyter Notebook. An option is: [CoLab](https://colab.research.google.com/notebooks/intro.ipynb)**
 
