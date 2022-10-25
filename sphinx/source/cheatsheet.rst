@@ -33,26 +33,6 @@ Session 9 - Functions & Decorators
 
         $ docker run --name jupyter -p 8888:8888 -v ${PWD}:/home/jovyan/work  jupyter/base-notebook 
 
------------------------
-Session 10 - Generators
------------------------
-
-.. code::
-
-        $ docker run --rm -p 8888:8888 -v ${PWD}:/home/jovyan/work clbo/jupyter
-
-The dockerfile for this image:    
-
-.. code::
-
-        FROM jupyter/datascience-notebook:latest
-
-        USER jovyan
-        # Default workdir: /home/jovyan
-
-        # install nbextensions
-        RUN pip install jupyter_contrib_nbextensions && jupyter contrib nbextension install --user
-
 ---------------
 Sphinx commands
 ---------------
