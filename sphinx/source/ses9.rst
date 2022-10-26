@@ -60,7 +60,6 @@ Exercises
 ---------
 * :ref:`Small exercises <exsm>`
 * :ref:`Ex1: Time it <ex1>`
-* :ref:`Ex2: memory-profiler <ex2>`
 * :ref:`Ex3: Slow down code <ex3>`
 
 .. _exsm:
@@ -127,25 +126,6 @@ You can read about time by starting your interpretor and write:
 
    > import time
    > help(time)
-
-
-
-   
-.. _ex2:
-
---------------------
-Ex2: memory-profiler 
---------------------
-
-Measuring the memory ussage of an object, function or piece of code can be of equally importance as the timing functionallity you just created.
-
-Python has a build in module called :code:`resource`. This is a unix system only module. Luckily we are all on a unix based system when we use docker for python development. 
-
-
-**Task:**
-
-Your job is, to write a decorator function that can messure the memory usage of any piece of code.
-
 
 .. _ex3: 
 
