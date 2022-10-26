@@ -158,12 +158,12 @@
     "hidden": true
    },
    "source": [
-    "I can return the inner function and use it out side"
+    "But i can return the inner function and use it out side"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 5,
+   "execution_count": 1,
    "metadata": {
     "hidden": true
    },
@@ -174,7 +174,7 @@
        "'Hello inner xxx'"
       ]
      },
-     "execution_count": 5,
+     "execution_count": 1,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -187,15 +187,13 @@
     "    return inner\n",
     "\n",
     "i = foo()\n",
-    "i()\n",
-    "\n"
+    "i()"
    ]
   },
   {
    "cell_type": "markdown",
    "metadata": {
     "heading_collapsed": true,
-    "jp-MarkdownHeadingCollapsed": true,
     "tags": []
    },
    "source": [
