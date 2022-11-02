@@ -46,7 +46,8 @@ And write a generator expression.
 Learning goals
 --------------
 
-   - Create memory and time efficient code using 
+   - Understand how functions are abstractions of a class/object 
+   - Create memory and time efficient code using: 
       - Iterator Classes
       - generator functions and 
       - generator expressoions.
