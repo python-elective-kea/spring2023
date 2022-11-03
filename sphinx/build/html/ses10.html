@@ -120,7 +120,7 @@
 </style>
 <div class="section" id="session-10-generators">
 <h1>Session 10 - Generators<a class="headerlink" href="#session-10-generators" title="Permalink to this headline"></a></h1>
-<p>Today you will learn about how to make your classes iterable. You will learn how to create a generator function and how to write this in an easier to read manner using a generator expression.</p>
+<p>Today you will learn how to make your classes iterable. You will learn how to create a generator function and how to write this in an easier to read manner using a generator expression. You will also gain inside into why a function in python is an object and how to make your own object callable.</p>
 <p>We will look at Iterator classes</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -169,7 +169,7 @@
 <h2>Learning goals<a class="headerlink" href="#learning-goals" title="Permalink to this headline"></a></h2>
 <blockquote>
 <div><ul class="simple">
-<li><p>Understand how functions are abstractions of a class/object</p></li>
+<li><p>Understand how functions are abstractions of a class.</p></li>
 <li><dl class="simple">
 <dt>Create memory and time efficient code using:</dt><dd><ul>
 <li><p>Iterator Classes</p></li>
@@ -195,8 +195,7 @@
 <h3>ex1:  Python Students<a class="headerlink" href="#ex1-python-students" title="Permalink to this headline"></a></h3>
 <p><a class="reference internal" href="exercises/solution/09_generators/solutions.html"><span class="doc">Solution</span></a></p>
 <p>Based on the Student class below, create a PythonStudents class that acts as a collection of students.
-The class should implement the iterations functionality (iter() and next())
-and be able to return an iter object.
+The class should implement the iterations protocol (iter(), next() and StopIteration).
 When iterated the Pythod_students object should return the name of each student
 in the list.</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
@@ -263,7 +262,7 @@ in the list.</p>
 <p>In this exercise you start out by having a list of names, and a list of majors.</p>
 <p>Your job is to create:</p>
 <ol class="arabic simple">
-<li><p>A list of dictionaries of students (ie: students = [{‘id’: 1,’name’: ‘Claus’, ‘major’: ‘Math’}]), cretated in a normal function that returns the resul.</p></li>
+<li><p>A list of dictionaries of students (ie: students = [{‘id’: 1,’name’: ‘Claus’, ‘major’: ‘Math’}]), cretated in a normal function that returns the result.</p></li>
 <li><p>A Generator that “returns” a generator object. So the student is yield instead of returned.</p></li>
 </ol>
 <p>Both functions should do the same, but one returns a list and one a generator object.</p>

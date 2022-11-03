@@ -1,7 +1,7 @@
 Session 10 - Generators
 =======================
 
-Today you will learn about how to make your classes iterable. You will learn how to create a generator function and how to write this in an easier to read manner using a generator expression. 
+Today you will learn how to make your classes iterable. You will learn how to create a generator function and how to write this in an easier to read manner using a generator expression. You will also gain inside into why a function in python is an object and how to make your own object callable.
 
 We will look at Iterator classes
 
@@ -46,7 +46,7 @@ And write a generator expression.
 Learning goals
 --------------
 
-   - Understand how functions are abstractions of a class/object 
+   - Understand how functions are abstractions of a class. 
    - Create memory and time efficient code using: 
       - Iterator Classes
       - generator functions and 
@@ -67,8 +67,7 @@ ex1:  Python Students
 `Solution <exercises/solution/09_generators/solutions.rst>`_
 
 Based on the Student class below, create a PythonStudents class that acts as a collection of students. 
-The class should implement the iterations functionality (iter() and next()) 
-and be able to return an iter object. 
+The class should implement the iterations protocol (iter(), next() and StopIteration). 
 When iterated the Pythod_students object should return the name of each student 
 in the list.        
 
@@ -116,7 +115,7 @@ In this exercise you start out by having a list of names, and a list of majors.
     
 Your job is to create:
         
-1. A list of dictionaries of students (ie: students = [{'id': 1,'name': 'Claus', 'major': 'Math'}]), cretated in a normal function that returns the resul.
+1. A list of dictionaries of students (ie: students = [{'id': 1,'name': 'Claus', 'major': 'Math'}]), cretated in a normal function that returns the result.
 
 2. A Generator that "returns" a generator object. So the student is yield instead of returned. 
    
