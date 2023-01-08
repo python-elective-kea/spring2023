@@ -23,11 +23,13 @@ Typing in these long lines of commands can be overvelming, and in many cases it 
 The solution for this is creating aliases in you shell configuration files.
 
 **Mac**
+
 Depending on which shell you are using do the following. 
 
 Check which shell you are using. 
 
 .. code::
+
    echo $0
    # bash or zsh
 
@@ -41,13 +43,15 @@ Check which shell you are using.
    # copy/paste this in
    alias dk_python='docker run -it --rm -v ${PWD}:/docs python:3.10.1 /bin/sh -c "cd docs" bash'  
 
-Now in your terminal you should be able to write **dk_python** instead of the long **docker run -it --rm -v ${PWD}:/docs python:3.10.1 bash**
+Now in your terminal you should be able to write **dk_python** instead of the long 'docker run -it --rm -v ${PWD}:/docs python:3.10.1 bash'
 
 **Windows**
+
 First you should open you powershell in administrator mode.      
 Then copy/paste this in:
 
 .. code::
+
    set-executionpolicy remotesigned
 
 This will allow execution of scripts in your powershell. 
@@ -55,14 +59,18 @@ This will allow execution of scripts in your powershell.
 Then copy paste this in:
 
 .. code::
+
    notepad $((Split-Path $profile -Parent) + "\profile.ps1")
 
 This will open a file. Copy/paste this in:
 
 .. code::
+
    Set-Alias dk_python 'docker run -it --rm -v ${PWD}:/docs python:3.10.1 /bin/sh -c "cd docs" bash'
 
-Now in your Powershell you should be able to write **dk_python** instead of the long **docker run -it --rm -v ${PWD}:/docs python:3.10.1 bash**
+
+Now in your Powershell you should be able to write **dk_python** instead of the long 'docker run -it --rm -v ${PWD}:/docs python:3.10.1 bash'
+
 
 ---------------------------------
 Session 5 - Utilities and Modules
