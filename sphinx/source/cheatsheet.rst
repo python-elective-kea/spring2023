@@ -15,14 +15,17 @@ Session 1 - Introduction to python
    $ docker run -it --rm python:3.10.1 bash // same as above, but now a python image. starts in a bash terminal.
    $ docker run -it --rm -v ${PWD}:/docs python:3.10.1 bash  // same as above, but now sharing files from the current directory to/from /docs folder in the container.
  
-
-**Creating aliases**    
+----------------
+Creating aliases
+----------------
 
 Typing in these long lines of commands can be overvelming, and in many cases it will result in many of you not using Docker at all for the execution of your python scripts.     
 
 The solution for this is creating aliases in you shell configuration files.
 
-**Mac**
+===
+Mac
+===
 
 Depending on which shell you are using do the following. 
 
@@ -30,29 +33,31 @@ Check which shell you are using.
 
 .. code::
 
-   echo $0
+   $ echo $0
    # bash or zsh
 
 
 .. code::
-   cd ~                 # move to root folder
-   open .bash_profile   # if you are using bash (if you get an error, create it first)
+   $ cd ~                 # move to root folder
+   $ open .bash_profile   # if you are using bash (if you get an error, create it first)
 
-   open .zsh_profile    # if you are using zsh (if you get an error, create it first)
+   $ open .zsh_profile    # if you are using zsh (if you get an error, create it first)
 
    # copy/paste this in
-   alias dk_python='docker run -it --rm -v ${PWD}:/docs python:3.10.1 /bin/sh -c "cd docs" bash'  
+   $ alias dk_python='docker run -it --rm -v ${PWD}:/docs python:3.10.1 /bin/sh -c "cd docs" bash'  
 
-Now in your terminal you should be able to write **dk_python** instead of the long 'docker run -it --rm -v ${PWD}:/docs python:3.10.1 bash'
+Now in your terminal you should be able to write **dk_python** instead of the long docker command 
 
-**Windows**
+=======
+Windows
+=======
 
-First you should open you powershell in administrator mode.      
+First you should open your powershell in administrator mode.      
 Then copy/paste this in:
 
 .. code::
 
-   set-executionpolicy remotesigned
+   > set-executionpolicy remotesigned
 
 This will allow execution of scripts in your powershell. 
 
@@ -60,16 +65,16 @@ Then copy paste this in:
 
 .. code::
 
-   notepad $((Split-Path $profile -Parent) + "\profile.ps1")
+   > notepad $((Split-Path $profile -Parent) + "\profile.ps1")
 
 This will open a file. Copy/paste this in:
 
 .. code::
 
-   Set-Alias dk_python 'docker run -it --rm -v ${PWD}:/docs python:3.10.1 /bin/sh -c "cd docs" bash'
+   > Set-Alias dk_python 'docker run -it --rm -v ${PWD}:/docs python:3.10.1 /bin/sh -c "cd docs" bash'
 
 
-Now in your Powershell you should be able to write **dk_python** instead of the long 'docker run -it --rm -v ${PWD}:/docs python:3.10.1 bash'
+Now in your Powershell you should be able to write **dk_python** instead of the long docker command 
 
 
 ---------------------------------
