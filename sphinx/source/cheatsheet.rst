@@ -31,6 +31,7 @@ Depending on which shell you are using do the following.
 
 
 .. code::
+   
    # First check which shell you are using. 
    $ echo $0
    # -> result will be bash or zsh
