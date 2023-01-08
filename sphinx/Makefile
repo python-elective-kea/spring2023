@@ -28,5 +28,5 @@ github:
 	@touch ../docs/.nojekyll
 	
 	@git -C ../ add . 
-	@git -C ../ commit -m "fall 2022"
+	@git -C ../ commit -m "Spring 2023"
 	@git -C ../ push origin master 
