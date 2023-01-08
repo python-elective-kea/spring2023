@@ -29,15 +29,12 @@ Mac
 
 Depending on which shell you are using do the following. 
 
-Check which shell you are using. 
 
 .. code::
-
+   # First check which shell you are using. 
    $ echo $0
-   # bash or zsh
+   # -> result will be bash or zsh
 
-
-.. code::
    $ cd ~                 # move to root folder
    $ open .bash_profile   # if you are using bash (if you get an error, create it first)
 
@@ -45,6 +42,7 @@ Check which shell you are using.
 
    # copy/paste this in
    $ alias dk_python='docker run -it --rm -v ${PWD}:/docs python:3.10.1 /bin/sh -c "cd docs" bash'  
+
 
 Now in your terminal you should be able to write **dk_python** instead of the long docker command 
 
