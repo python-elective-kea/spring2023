@@ -42,7 +42,7 @@ Depending on which shell you are using do the following.
    $ open .zsh_profile    # if you are using zsh (if you get an error, create it first)
 
    # copy/paste this in
-   $ alias dk_python='docker run -it --rm -v ${PWD}:/docs python:3.10.1 /bin/sh -c "cd docs" bash'  
+   $ alias dk_python='docker run -it --rm -v ${PWD}:/docs python:3.10.1 bash'  
 
 
 Now in your terminal you should be able to write **dk_python** instead of the long docker command 
@@ -70,7 +70,7 @@ This will open a file. Copy/paste this in:
 
 .. code::
 
-   > Set-Alias dk_python 'docker run -it --rm -v ${PWD}:/docs python:3.10.1 /bin/sh -c "cd docs" bash'
+   > Set-Alias dk_python 'docker run -it --rm -v ${PWD}:/docs python:3.10.1 bash'
 
 
 Now in your Powershell you should be able to write **dk_python** instead of the long docker command 

@@ -152,7 +152,7 @@ $ open .bash_profile   # if you are using bash (if you get an error, create it f
 $ open .zsh_profile    # if you are using zsh (if you get an error, create it first)
 
 # copy/paste this in
-$ alias dk_python=&#39;docker run -it --rm -v ${PWD}:/docs python:3.10.1 /bin/sh -c &quot;cd docs&quot; bash&#39;
+$ alias dk_python=&#39;docker run -it --rm -v ${PWD}:/docs python:3.10.1 bash&#39;
 </pre></div>
 </div>
 <p>Now in your terminal you should be able to write <strong>dk_python</strong> instead of the long docker command</p>
@@ -170,7 +170,7 @@ Then copy/paste this in:</p>
 </pre></div>
 </div>
 <p>This will open a file. Copy/paste this in:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">Set</span><span class="o">-</span><span class="n">Alias</span> <span class="n">dk_python</span> <span class="s1">&#39;docker run -it --rm -v $</span><span class="si">{PWD}</span><span class="s1">:/docs python:3.10.1 /bin/sh -c &quot;cd docs&quot; bash&#39;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">Set</span><span class="o">-</span><span class="n">Alias</span> <span class="n">dk_python</span> <span class="s1">&#39;docker run -it --rm -v $</span><span class="si">{PWD}</span><span class="s1">:/docs python:3.10.1 bash&#39;</span>
 </pre></div>
 </div>
 <p>Now in your Powershell you should be able to write <strong>dk_python</strong> instead of the long docker command</p>
