@@ -1,7 +1,15 @@
 Session 8 - Encapsulation
 =========================
 
-The pythonic approach starts out with the quite bold statement that all attributes are public, and unless specificly needed there are not any reason to make them anything else but public. If you think on back on your java development times, it is in reality seldome that you do some coding tasks that could not have been done with public attributes instead of privates with connected getters and setters. The pythonic approach to this problem is: make everything public, and if at some point you need to encapsulate, decorate your attributes and change it into a property. Today we will work with this approach in mind.  
+In Python, it is generally considered best practice to make all attributes public unless there is a specific need to make them private. This is in contrast to languages like Java, where private attributes and accompanying getters and setters are the norm.
+
+When we need to encapsulate data (e.i if we need to validate the data) we can use different methods. We will look at two approaches: properties and descriptor classes.
+
+A property is a build in decorator function and is using the syntax :code:`@property`. Just like you learned in the session about decorator functions. Descriptor classes is a class with the :code:`__get__(), __set__() and __deleter__()` methods implemened.
+
+These 2 approaches is considered best practice or 'Pythonic' and this is what we will look at in todays session.
+
+.. The pythonic approach starts out with the quite bold statement that all attributes are public, and unless specificly needed there are not any reason to make them anything else but public. If you think on back on your java development times, it is in reality seldome that you do some coding tasks that could not have been done with public attributes instead of privates with connected getters and setters. The pythonic approach to this problem is: make everything public, and if at some point you need to encapsulate, decorate your attributes and change it into a property. Today we will work with this approach in mind.  
 
 Learning goals
 --------------
@@ -9,14 +17,16 @@ After this week you will be able to:
         
 - Understand the pythonic approach to encapsulation. 
 - Use private and public attributes in your code
-- Explain what is meant by private in python 
+.. - Explain what is meant by private in python 
 - Work with properties to use encapsulation.
 - And explain the pros and cons of properties and public attributes compared to Java´s private attributes with getters and setters. 
 
 Materials
 ---------
-* `Properties vs. Getters and Setters <https://www.python-course.eu/python3_properties.php>`_
-* `Private attributes and methods <https://www.bogotobogo.com/python/python_private_attributes_methods.php>`_
+.. * `Properties vs. Getters and Setters <https://www.python-course.eu/python3_properties.php>`_
+   * `Private attributes and methods <https://www.bogotobogo.com/python/python_private_attributes_methods.php>`_
+* `Python @property <https://towardsdatascience.com/6-approaches-to-validate-class-attributes-in-python-b51cffb8c4ea#8a8e>`_
+* `Python Descriptors <https://towardsdatascience.com/6-approaches-to-validate-class-attributes-in-python-b51cffb8c4ea#b0ea>`_
 * `Notebook on properties <notebooks/OOP_Encapsulation_Propeties.rst>`_
 * `Code examples from teachings <https://github.com/python-elective-kea/fall2022-code-examples-from-teachings/tree/master/ses7>`_
 
