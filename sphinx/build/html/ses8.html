@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Session 8 - The python datamodel &mdash; Introduction to python 4.0.0 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <title>Session 8 - Encapsulation &mdash; Introduction to python 4.0.0 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
@@ -20,8 +20,8 @@
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Session 9 - Functions &amp; Decorators" href="ses9.html" />
-    <link rel="prev" title="Session 7 - Encapsulation" href="ses7.html" /> 
+    <link rel="next" title="Session 9 - The python datamodel" href="ses9.html" />
+    <link rel="prev" title="Session 7 - OOP" href="ses7.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -49,18 +49,23 @@
 <li class="toctree-l1"><a class="reference internal" href="ses3.html">Session 3 - Mandatory assignment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ses4.html">Session 4 - Modules &amp; list comprehensions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ses5.html">Session 5 - Utilities and Modules</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ses6.html">Session 6 - OOP</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ses7.html">Session 7 - Encapsulation</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Session 8 - The python datamodel</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="ses6.html">Session 6 - Functions &amp;  Decorators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ses7.html">Session 7 - OOP</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Session 8 - Encapsulation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#learning-goals">Learning goals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#materials">Materials</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#exercises">Exercises</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#ex1-deck-of-cards">Ex1: Deck of cards</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#encaptiolation-propeties-exercises">Encaptiolation &amp; Propeties exercises</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ex-1-car-object">Ex 1:  Car object</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex-2-bank">Ex 2: Bank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex-3-machine-printer">Ex 3: Machine -&gt; printer</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="ses9.html">Session 9 - Functions &amp;  Decorators</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ses9.html">Session 9 - The python datamodel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ses10.html">Session 10 - Generators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ses11.html">Session 11 - Context Managers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ses12.html">Session 12 - Mandatory Assignment 2</a></li>
@@ -82,7 +87,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Session 8 - The python datamodel</li>
+      <li>Session 8 - Encapsulation</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/python-elective-kea/spring2023/blob/master/sphinx/source/ses8.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -116,61 +121,85 @@
     text-align: unset;
 }
 </style>
-<div class="section" id="session-8-the-python-datamodel">
-<h1>Session 8 - The python datamodel<a class="headerlink" href="#session-8-the-python-datamodel" title="Permalink to this headline"></a></h1>
-<p>Today we will look at the python data model.</p>
-<p>After this you will be able to implement code in own classes that allow you to use pythons built-in functions or top level syntax to interact with these object.</p>
-<p><strong>Example:</strong></p>
-<p>If you want to be able to use the build in function <code class="code docutils literal notranslate"><span class="pre">len()</span></code> on your object you should implement the <code class="code docutils literal notranslate"><span class="pre">__len__</span></code> method in your class.</p>
-<p>If you want to be able to use the <code class="code docutils literal notranslate"><span class="pre">==</span></code> operator on your object you should implement the <code class="code docutils literal notranslate"><span class="pre">__eq__</span></code> method in your class.</p>
-<p>If you want to be able to use the <code class="code docutils literal notranslate"><span class="pre">in</span></code> key word on your object you should implement the <code class="code docutils literal notranslate"><span class="pre">__contains__</span></code> method in your class.</p>
+<div class="section" id="session-8-encapsulation">
+<h1>Session 8 - Encapsulation<a class="headerlink" href="#session-8-encapsulation" title="Permalink to this headline"></a></h1>
+<p>The pythonic approach starts out with the quite bold statement that all attributes are public, and unless specificly needed there are not any reason to make them anything else but public. If you think on back on your java development times, it is in reality seldome that you do some coding tasks that could not have been done with public attributes instead of privates with connected getters and setters. The pythonic approach to this problem is: make everything public, and if at some point you need to encapsulate, decorate your attributes and change it into a property. Today we will work with this approach in mind.</p>
 <div class="section" id="learning-goals">
 <h2>Learning goals<a class="headerlink" href="#learning-goals" title="Permalink to this headline"></a></h2>
-<blockquote>
-<div><ul class="simple">
-<li><p>Create your own classes, that behave like any other Python Object, and are able to interact with pythons build in functions or top level syntax.</p></li>
-<li><p>Use Jupyter Notebook as code editor.</p></li>
+<p>After this week you will be able to:</p>
+<ul class="simple">
+<li><p>Understand the pythonic approach to encapsulation.</p></li>
+<li><p>Use private and public attributes in your code</p></li>
+<li><p>Explain what is meant by private in python</p></li>
+<li><p>Work with properties to use encapsulation.</p></li>
+<li><p>And explain the pros and cons of properties and public attributes compared to Java´s private attributes with getters and setters.</p></li>
 </ul>
-</div></blockquote>
 </div>
 <div class="section" id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Permalink to this headline"></a></h2>
 <ul class="simple">
-<li><dl class="simple">
-<dt><a class="reference external" href="https://www.youtube.com/watch?v=7lmCu8wz8ro">What Does It Take To Be An Expert At Python?</a></dt><dd><ul>
-<li><p>This is a talk about expert python programming and this is what we will cover the rest of this semester. (Todays topic is from the beginning to 17:43)</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><p><a class="reference external" href="_static/The_Python_Data_Model.pdf">The Python Data Model</a></p></li>
-<li><p><a class="reference external" href="https://rszalski.github.io/magicmethods/">A Guide to Python’s Magic Methods</a></p></li>
-<li><p><a class="reference external" href="https://www.youtube.com/watch?v=z11P9sojHuM">Expert Python Tutorial #2 - Dunder/Magic Methods &amp; The Python Data Model</a></p></li>
-<li><p><a class="reference internal" href="notebooks/OOP_Encapsulation_Propeties.html#Datamodel"><span class="std std-ref">Notebook on Datamodel</span></a></p></li>
-<li><p><a class="reference external" href="https://drive.google.com/drive/folders/1tydROTotoKhmulIhUXbYWAdiriZeNdIk?usp=sharing">Code examples from teachings</a></p></li>
-<li><p><a class="reference external" href="https://colab.research.google.com/">Google Colab</a></p></li>
+<li><p><a class="reference external" href="https://www.python-course.eu/python3_properties.php">Properties vs. Getters and Setters</a></p></li>
+<li><p><a class="reference external" href="https://www.bogotobogo.com/python/python_private_attributes_methods.php">Private attributes and methods</a></p></li>
+<li><p><a class="reference internal" href="notebooks/OOP_Encapsulation_Propeties.html"><span class="doc">Notebook on properties</span></a></p></li>
+<li><p><a class="reference external" href="https://github.com/python-elective-kea/fall2022-code-examples-from-teachings/tree/master/ses7">Code examples from teachings</a></p></li>
 </ul>
 </div>
 <div class="section" id="exercises">
 <h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline"></a></h2>
-<div class="section" id="ex1-deck-of-cards">
-<h3>Ex1: Deck of cards<a class="headerlink" href="#ex1-deck-of-cards" title="Permalink to this headline"></a></h3>
-<p><a class="reference internal" href="exercises/solution/06_datamodel/solutions.html"><span class="doc">Solution</span></a></p>
-<p>Continue with the deck example and implement the</p>
+<div class="section" id="encaptiolation-propeties-exercises">
+<h3>Encaptiolation &amp; Propeties exercises<a class="headerlink" href="#encaptiolation-propeties-exercises" title="Permalink to this headline"></a></h3>
+<p>All following exercises should be done by using <strong>Properties</strong> when needed (Ex 1 should have also properties every where even though its not needed). The focus should be on encapsulation.</p>
+<div class="section" id="ex-1-car-object">
+<h4>Ex 1:  Car object<a class="headerlink" href="#ex-1-car-object" title="Permalink to this headline"></a></h4>
+<p><a class="reference internal" href="exercises/solution/05_encapsulation/solutions.html"><span class="doc">Solution</span></a></p>
+<p>Create a Car class. When instanciated the object should be able to take 4 attributes (Make, Model, bhp, mph). They all 4 should be properties. (Even though this is not nessary here, you should create properties in order just to try it out).</p>
+</div>
+<div class="section" id="ex-2-bank">
+<h4>Ex 2: Bank<a class="headerlink" href="#ex-2-bank" title="Permalink to this headline"></a></h4>
+<p><a class="reference internal" href="exercises/solution/05_encapsulation/solutions.html"><span class="doc">Solution</span></a></p>
+<p>In the exercise from last monday with the bank, account and customer, change the code to use properties instead of the public variables.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Bank</span><span class="p">:</span>
+     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">accounts</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">class</span> <span class="nc">Account</span><span class="p">:</span>
+     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">no</span><span class="p">,</span> <span class="n">cust</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">no</span> <span class="o">=</span> <span class="n">no</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cust</span> <span class="o">=</span> <span class="n">cust</span>
+
+<span class="k">class</span> <span class="nc">Customer</span><span class="p">:</span>
+     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</pre></div>
+</td></tr></table></div>
 <ul class="simple">
-<li><p><code class="code docutils literal notranslate"><span class="pre">__len__</span></code> method</p></li>
-<li><p><code class="code docutils literal notranslate"><span class="pre">__add__</span></code> method</p></li>
-<li><p><code class="code docutils literal notranslate"><span class="pre">__repr__</span></code> method</p></li>
-<li><p><code class="code docutils literal notranslate"><span class="pre">__str__</span></code> method</p></li>
-<li><p><code class="code docutils literal notranslate"><span class="pre">__setitem__</span></code> method</p></li>
-<li><p><code class="code docutils literal notranslate"><span class="pre">__delitem__</span></code> method</p></li>
+<li><p>The bank class should futher be change into not taking any accounts as parameters at initialization.</p></li>
+<li><p>The accouts should be added afterwards, eithers as a single account one at a time, or as a collection of accounts (many at the sametime).</p></li>
+<li><p>Somewhere you should change the code so that a customer only can create one account.</p></li>
+<li><p>The Customer class should make sure that the customer is over 18 year of age.</p></li>
 </ul>
-<p>We look at this together in a short while.</p>
-<p>When you a done, take a look at the 2 exercises below and ask your questions.</p>
-<hr><ul class="simple">
-<li><p><a class="reference internal" href="exercises/protocol_linked_list.html"><span class="doc">Linked List</span></a></p></li>
-<li><p><a class="reference internal" href="exercises/JellyBeans.html"><span class="doc">Jelly Beans</span></a></p></li>
+</div>
+<div class="section" id="ex-3-machine-printer">
+<h4>Ex 3: Machine -&gt; printer<a class="headerlink" href="#ex-3-machine-printer" title="Permalink to this headline"></a></h4>
+<p><a class="reference internal" href="exercises/solution/05_encapsulation/solutions.html"><span class="doc">Solution</span></a></p>
+<ul class="simple">
+<li><p>Create a Machine class that takes care of powering on and off a the machine.</p></li>
+<li><p>Create a printer class that is a subclass of the Machine super class.</p></li>
+<li><p>The printer should be able to print to console.</p></li>
+<li><p>The printer should have a papertray, which should be in its own class. The papertray class should keep track of the paper, it should have the abillity to use paper and load new paper in the tray if empty.</p></li>
 </ul>
+</div>
 </div>
 </div>
 </div>
@@ -179,8 +208,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="ses7.html" class="btn btn-neutral float-left" title="Session 7 - Encapsulation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="ses9.html" class="btn btn-neutral float-right" title="Session 9 - Functions &amp; Decorators" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="ses7.html" class="btn btn-neutral float-left" title="Session 7 - OOP" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="ses9.html" class="btn btn-neutral float-right" title="Session 9 - The python datamodel" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

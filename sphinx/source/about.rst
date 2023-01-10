@@ -1,12 +1,14 @@
 About this elective
 ===================
 
-This elective is one of the 3 you have chosen on your 4th semester computer science education. Its aim is make you a better and a more clear thinking programmer, and therefore this electives focus are on low level programming, and algorithmic thinking. 
+This elective is one of the 3 you have chosen on your 4th semester computer science education. Its aim is make you a better and a more clear thinking programmer.
+
+We will not have a lot of focus on creating applications that can perform this or that task. You will of cause be able to use the language and what you learn in this elective for doing that, but as described, application production will not be the focus of this elective. 
 
 Teaching plan
 ------------
 
-The details of each session can be found by following the links in the meny on the left. Your class and individual schedules can be found on http://keaplan.kea.dk .
+The details of each session can be found by following the links in the meny on the left. Your class and individual schedules can be found on Fronter. 
 
 .. _learning-goals:
 
@@ -30,7 +32,7 @@ The litterature to support the learning outcome of this elective can be found on
 
 * https://realpython.com/
 
-An exelent book (but somehow more advanced) about the python language are::
+An exelent book (but somehow more advanced) about the python language are:
 
     Fluent Python: Clear, Concise, and Effective Programming, First Edition  
     Luciano Ramalho  
