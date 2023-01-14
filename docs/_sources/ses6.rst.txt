@@ -38,7 +38,7 @@ Learning goals
 --------------
 By reading the texts in the materials section, doing the 3 exercises, and follow the teachings, you will be able to explain what a decorator is, when to use it, and how the inner parts of a decorator function is made up, and you will be able to create your own, and use others already made decorators. 
 
-After this week you will know about:
+After this week you will know about and be able to use and explain:
 
         - First class functions 
         - Inner functions

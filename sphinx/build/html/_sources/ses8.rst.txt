@@ -16,17 +16,14 @@ Learning goals
 After this week you will be able to:
         
 - Understand the pythonic approach to encapsulation. 
-- Use private and public attributes in your code
-.. - Explain what is meant by private in python 
+- Use public and non-public attributes in your code
 - Work with properties to use encapsulation.
 - And explain the pros and cons of properties and public attributes compared to Java´s private attributes with getters and setters. 
 
 Materials
 ---------
-.. * `Properties vs. Getters and Setters <https://www.python-course.eu/python3_properties.php>`_
-   * `Private attributes and methods <https://www.bogotobogo.com/python/python_private_attributes_methods.php>`_
-* `Python @property <https://towardsdatascience.com/6-approaches-to-validate-class-attributes-in-python-b51cffb8c4ea#8a8e>`_
-* `Python Descriptors <https://towardsdatascience.com/6-approaches-to-validate-class-attributes-in-python-b51cffb8c4ea#b0ea>`_
+* `Difference between _, __ and __xx__ in Python <https://igorsobreira.com/2010/09/16/difference-between-one-underline-and-two-underlines-in-python.html>`_
+* `Python's property(): Add Managed Attributes to Your Classes <https://realpython.com/python-property/>`_
 * `Notebook on properties <notebooks/OOP_Encapsulation_Propeties.rst>`_
 * `Code examples from teachings <https://github.com/python-elective-kea/fall2022-code-examples-from-teachings/tree/master/ses7>`_
 
