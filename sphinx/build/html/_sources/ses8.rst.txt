@@ -9,8 +9,11 @@ A property is a build in decorator function and is using the syntax :code:`@prop
 
 This approach is considered best practice or 'Pythonic' and this is what we will look at in todays session.
 
-        *A property, in some object-oriented programming languages, is a special sort of class member, intermediate in functionality between a field (or data member) and a method. The syntax for reading and writing of properties is like for fields, but property reads and writes are (usually) translated to 'getter' and 'setter' method calls. The field-like syntax is easier to read and write than many method calls, yet the interposition of method calls "under the hood" allows for data validation, active updating, or implementation of what may be called "read-only fields".*
-*
+        *from wikipedia: 
+        A property, in some object-oriented programming languages, is a special sort of class member, intermediate in functionality between a field (or data member) and a method. The syntax for reading and writing of properties is like for fields, but property reads and writes are (usually) translated to 'getter' and 'setter' method calls. The field-like syntax is easier to read and write than many method calls, yet the interposition of method calls "under the hood" allows for data validation, active updating, or implementation of what may be called "read-only fields".*
+
+
+
 .. The pythonic approach starts out with the quite bold statement that all attributes are public, and unless specificly needed there are not any reason to make them anything else but public. If you think on back on your java development times, it is in reality seldome that you do some coding tasks that could not have been done with public attributes instead of privates with connected getters and setters. The pythonic approach to this problem is: make everything public, and if at some point you need to encapsulate, decorate your attributes and change it into a property. Today we will work with this approach in mind.  
 
 Learning goals
