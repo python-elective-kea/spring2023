@@ -10,10 +10,13 @@ The exam is evaluated based on the 7 step scale and you are evaluated on how goo
 The exam
 --------
 
+**The dates for the oral exam are 5-9 of june 23**
+
 The exam consist of 2 elements: 
 
 * a hand in of a synopsis, and an 
 * oral exam.
+
 
 Hand-in a synopsis:
 *******************
@@ -37,9 +40,10 @@ Exam Topics
 At your exam you should demonstrate to wich extend you fullfill the learning goals of this elective. 
 This you should do through demonstrating your knowlege, skills and competencies within these topics. 
 
-        * Data Structures & functions
-        * Pythonic OOP
+        * Pythonic OOP and encapsulation
+        * Build in functions as an API
         * Generators, Decorators & Context Managers
+        * Decorators and properties
 
 You can get inspiration about what to talk about within each topic in your presentation `here <notebooks/exam_synopsis_template.md>`_.
 
@@ -53,7 +57,6 @@ Some weeks before the oral exam you will have to hand in a synopsis describing w
 
 Oral exam
 *********
-
 
 You draw a topic from the topic cards.
 For 10 minutes you will present what you have prepared for this specific topic. 

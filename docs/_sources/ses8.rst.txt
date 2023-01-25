@@ -13,9 +13,6 @@ This approach is considered best practice or 'Pythonic' and this is what we will
         A property, in some object-oriented programming languages, is a special sort of class member, intermediate in functionality between a field (or data member) and a method. The syntax for reading and writing of properties is like for fields, but property reads and writes are (usually) translated to 'getter' and 'setter' method calls. The field-like syntax is easier to read and write than many method calls, yet the interposition of method calls "under the hood" allows for data validation, active updating, or implementation of what may be called "read-only fields".*
 
 
-
-.. The pythonic approach starts out with the quite bold statement that all attributes are public, and unless specificly needed there are not any reason to make them anything else but public. If you think on back on your java development times, it is in reality seldome that you do some coding tasks that could not have been done with public attributes instead of privates with connected getters and setters. The pythonic approach to this problem is: make everything public, and if at some point you need to encapsulate, decorate your attributes and change it into a property. Today we will work with this approach in mind.  
-
 Learning goals
 --------------
 After this week you will be able to:
@@ -28,12 +25,11 @@ After this week you will be able to:
 Materials
 ---------
 * `Difference between _, __ and __xx__ in Python <https://igorsobreira.com/2010/09/16/difference-between-one-underline-and-two-underlines-in-python.html>`_
+* `Python Descriptors: An Introduction <https://realpython.com/python-descriptors/>`_
 * `Python's property(): Add Managed Attributes to Your Classes <https://realpython.com/python-property/>`_
+* `Python Descriptors: An Introduction <https://realpython.com/python-descriptors/>`_
 * `Notebook on properties <notebooks/OOP_Encapsulation_Propeties.rst>`_
 * `Code examples from teachings <https://github.com/python-elective-kea/fall2022-code-examples-from-teachings/tree/master/ses7>`_
-
-
-
 
 Exercises
 ---------
@@ -83,15 +79,10 @@ In the exercise from last monday with the bank, account and customer, change the
 * Somewhere you should change the code so that a customer only can create one account.     
 * The Customer class should make sure that the customer is over 18 year of age.
 
-
-
-
-
 Ex 3: Machine -> printer
 ************************
 
 `Solution <exercises/solution/05_encapsulation/solutions.rst>`_
-
 
 * Create a Machine class that takes care of powering on and off a the machine.   
 * Create a printer class that is a subclass of the Machine super class.   
