@@ -29,7 +29,7 @@ Materials
 * `Python's property(): Add Managed Attributes to Your Classes <https://realpython.com/python-property/>`_
 * `Python Descriptors: An Introduction <https://realpython.com/python-descriptors/>`_
 * `Notebook on properties <notebooks/OOP_Encapsulation_Propeties.rst>`_
-* `Code examples from teachings <https://github.com/python-elective-kea/fall2022-code-examples-from-teachings/tree/master/ses7>`_
+* `Code examples from teachings <https://github.com/python-elective-kea/spring2023-code-examples-from-teachings/tree/master/ses8>`_
 
 Exercises
 ---------

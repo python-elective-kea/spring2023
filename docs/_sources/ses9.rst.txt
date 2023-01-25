@@ -29,8 +29,7 @@ Materials
 * `A Guide to Python's Magic Methods <https://rszalski.github.io/magicmethods/>`_
 * `Expert Python Tutorial #2 - Dunder/Magic Methods & The Python Data Model <https://www.youtube.com/watch?v=z11P9sojHuM>`_
 * `Notebook on Datamodel <notebooks/OOP_Encapsulation_Propeties.ipynb#Datamodel>`_
-* `Code examples from teachings <https://drive.google.com/drive/folders/1tydROTotoKhmulIhUXbYWAdiriZeNdIk?usp=sharing>`_
-* `Google Colab <https://colab.research.google.com/>`_
+* `Code examples from teachings <>`_
 
 Exercises
 ---------
