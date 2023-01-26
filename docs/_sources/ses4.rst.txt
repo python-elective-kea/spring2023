@@ -1,14 +1,13 @@
 Session 4 - Mandatory assignment
 ================================
-
-Todays lectures will be used for your first mandatory assignment. The assignment is an individual assignment, but you are welcome to work together in solving this. Everybody should hand in individualy though. 
+Today's lectures will be used for your first mandatory assignment. The assignment is individual, but you are welcome to work together in solving it. However, everyone should hand it in individually.
 
 This assignment is online and can be done from home. 
 
-**There will be no normal teachings, and no introduction to this assignment.** 
+**There will be no in-person instruction, and no introduction to this assignment.**
 
 **Solutions**
-`Check you solutions agains this <exercises/solution/03_mandatory_set_dicts/Solutions_mandatory_sets_dicts.ipynb>`_
+`Check your solutions against the provided materials <exercises/solution/03_mandatory_set_dicts/Solutions_mandatory_sets_dicts.ipynb>`_
 
 .. note::
         | `Link to Assignment for the A class (morning) on fronter  <https://kea-fronter.itslearning.com/ContentArea/ContentArea.aspx?LocationID=5798&LocationType=1&ElementID=1080170>`_
@@ -18,9 +17,8 @@ This assignment is online and can be done from home.
         | Peer Review: Hand in latest **Monday 27/2 12:00**
 
 
-The final evaluation of your assignment will be done by Claus and will be either a passed or not passed evaluation. 
+The final evaluation of your assignment will be conducted by Claus and will result in a pass or fail evaluation.
 
-**Peer review**    
-Means that you will have to review two of your fellow students assignment and give feddback. The assignment you should review will be randomly chosen by "Fronter", and you will recieve an email with a link to the assignment you should review or if you do nit get an email you can find the links to the assignments in the handin folder. This is part of your mandatory assignment and you will have to do this in order to pass the mandatory assignment.)
+**Peer review** means that you will need to review the assignments of two of your classmates and provide feedback. The assignments you should review will be randomly selected by "Fronter" and you will receive a notification with a link to the assignment you should review. If you do not receive a notification, you can find the links to the assignments in the hand-in folder. This is a mandatory part of your assignment and you must complete it in order to pass the assignment.
 
 
