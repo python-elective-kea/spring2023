@@ -1,11 +1,10 @@
 Session 3 - Modules & list comprehensions
 =========================================
+Today we will examine modules in Python. You will create your own modules and learn how to use Python's built-in modules. In two weeks, we will continue with 3rd party modules (code created by others) and you will learn how to incorporate these into your own code and ensure that others using your code have access to the same 3rd party modules and the correct versions.
 
-Today we will look at modules in python. You will build your own modules and use them, and you will learn how to use pythons build in modules. Next week we cary on with 3rd party modules (code made by someone else in the world), and you will learn how to incorporate these in your own code, and learn how to make sure how every body else that will use your code will have access to the same 3. party modules as you and to the right version of this. . 
+First, we will examine list comprehensions, a concise way to generate lists.
 
-First we will look at list comprehensions, a condenced way togenerate lists. 
-
-You will on the practical level today, besides comprehensions, work with 4 modules:
+Today on the practical level, you will work with four modules in addition to comprehensions:
 
 * Os module
 * Subprocesses module
@@ -17,7 +16,7 @@ Learning goals
 After this week you will be able to:
        
         - Create your own modules.
-        - Use python build in modules.
+        - Use Python's built-in modules.
         - Find and use 3rd party modules.
         - Use the requests module to fetch website data.
         - search a document for patterns.   
