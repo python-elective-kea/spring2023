@@ -1,7 +1,7 @@
 Session 5 - Utilities and Modules
 =================================
 
-Today we will carry on the work with modules and more specific the 3rd party module BeautifulSoup for webscrabing. You will also work with persitance in your docker containers, meaning how you will "save" your installed modules done by pip install.
+Today, we will continue working with modules, focusing specifically on the third-party module BeautifulSoup for web scraping. Additionally, you will learn how to persistently save your installed modules (done using pip install) within your Docker containers.
 
 Learning goals
 --------------

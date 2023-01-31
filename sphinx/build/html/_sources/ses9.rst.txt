@@ -1,7 +1,9 @@
 Session 9 - The python datamodel
 ================================
 
-Today we will look at the python data model. 
+Today we will look at the python datamodel. 
+
+Python has a protocol orientated datamodel.
 
 After this you will be able to implement code in own classes that allow you to use pythons built-in functions or top level syntax to interact with these object.
 
@@ -24,7 +26,7 @@ Materials
 ---------
 
 * `What Does It Take To Be An Expert At Python? <https://www.youtube.com/watch?v=7lmCu8wz8ro>`_
-   * This is a talk about expert python programming and this is what we will cover the rest of this semester. (Todays topic is from the beginning to 17:43) 
+   * This is a talk about expert python programming and this is what we will cover the rest of this semester. (Todays topic is from the beginning to 18:43) 
 * `The Python Data Model <_static/The_Python_Data_Model.pdf>`_
 * `A Guide to Python's Magic Methods <https://rszalski.github.io/magicmethods/>`_
 * `Expert Python Tutorial #2 - Dunder/Magic Methods & The Python Data Model <https://www.youtube.com/watch?v=z11P9sojHuM>`_
