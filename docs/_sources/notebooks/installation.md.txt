@@ -64,11 +64,8 @@ Now you have a ubuntu operating system running on your computer (in a docker con
 
 
 ### Run your Second Docker container (Python). 
-
-The second Image you should create a container from is an official python docker image.    
-
-Run the following command in your termianl to download the image and run a container.
-
+The second image you should create a container from is the official Python Docker image.
+To download the image and run a container, run the following command in your terminal:
 
 ````
 	$ docker run -it --rm python:3.9.13 bash
