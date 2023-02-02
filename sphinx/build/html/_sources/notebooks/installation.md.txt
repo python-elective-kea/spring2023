@@ -1,5 +1,25 @@
 # Installations
+
+## Last minutes change to the installation process.
+Previous semesters we installed python through Docker Desktop i the first sessions of the semester. We will pospone this for a few weeks.
+Instead you should today install python directly on your computer.
+
+## Install python
+Go to [www.python.org](https://www.python.org) and find the download button, and install python.
+When done open you Terminal (mac) og Powershell (win) and type
+
+```
+	$ python3 --version
+	Python 3.10.9
+``` 
+and you should see sometthing like this. If not python is not installed, or maybe something else went wrong (ask Claus). 
+
+
+
+### The things described beneath will be used at a later session this semester but not today
+
 This document will describe what you should install in order to follow this elective.   
+
 
 You will not install python directly on your computer, but instead run docker containers build open different kinds of python images.    
 
@@ -11,10 +31,12 @@ This makes it easier to work together across different OS in groups (at work or 
 
 You probably already have installed some of the following applications, but if you do not you should now install:
 
+
 1. Docker desktop 
 2. Some kind of text editor.
 3. Git 
 4. Create a GitHub account.
+
 
 ## 1. Docker Desktop
 ### Download and install Docker Desktop
@@ -42,6 +64,8 @@ If you do not see this, get an error or like, then you still de not have docker 
 The first Image you should create a container from is a basic Ubuntu image.    
 
 Run the following command in your termianl to download the image and run a container.
+
+
 
 
 ````
