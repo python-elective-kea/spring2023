@@ -26,7 +26,7 @@ Materials
 * `Built-in Functions <https://docs.python.org/3/library/functions.html>`_
 * `Strings and Character Data in Python <https://realpython.com/python-strings/>`_
 * `if Statements <https://docs.python.org/3/tutorial/controlflow.html#if-statements>`_
-* `Notes from teachings <notebooks/note_01.md>`_
+* `Notes from teachings <notebooks/notes_01.md>`_
 * `Code examples from teachings <https://github.com/python-elective-kea/spring2023-code-examples-from-teachings/tree/master/ses1>`_
 
 Exercises
