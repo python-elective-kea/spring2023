@@ -161,8 +161,49 @@ For this you should  use the 'time' module.
 When you got the 'slowdown code' working on this recursive function, try to create a more (for you) normal function that does the countdown using a loop, and see what happens if you decorate that function with you slowdown() function.
 
 
+------------------------------
+Ex: Decorating Game Characters
+------------------------------
 
 
 
+
+**Background**
+In the world of computer games, every character has a unique skill or ability that makes them special. For example, a character might have the ability to shoot accurately, move stealthily, or hack into computers.
+
+We're going to use Python decorators to add unique skills or abilities to game characters.
+
+**Task**
+Create a Python decorator that adds a unique skill or ability to a game character. The decorator should be reusable, so that we can add multiple skills or abilities to a character.
+
+**Example**
+Here's an example of how the decorator might be used:
+
+.. code:: python
+   :linenos:
+        
+   @sharpshooter
+   @stealthy
+   def player():
+       return "I'm the player character"
+
+   print(player())
+
+The output of the code should be:
+
+.. code::
+
+   I'm the player character, the sharpshooter and stealthy character.
+
+
+
+**Steps**
+1. Create a decorator function that takes a function as an argument and returns a new function that adds a unique skill or ability to the character's description.
+2. Add the decorator to the player() function to add the "sharpshooter" and "stealthy" abilities to the player character.
+3. Test your code to make sure it works as expected.
+
+**Bonus**
+1. Create additional decorators for other skills or abilities that might be found in a computer game.
+2. Add multiple skills or abilities to a single character by stacking multiple decorators.
 
 

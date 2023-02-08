@@ -56,6 +56,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#small-exercises">Small Exercises</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ex1-time-it">Ex1: Time it!</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ex3-slow-down-code">Ex3: Slow down code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ex-decorating-game-characters">Ex: Decorating Game Characters</a></li>
 </ul>
 </li>
 </ul>
@@ -250,6 +251,40 @@
 <p>Create a decorator function that slows down your code by 1 second for each step. Call this function <em>slowdown()</em></p>
 <p>For this you should  use the ‘time’ module.</p>
 <p>When you got the ‘slowdown code’ working on this recursive function, try to create a more (for you) normal function that does the countdown using a loop, and see what happens if you decorate that function with you slowdown() function.</p>
+</div>
+<div class="section" id="ex-decorating-game-characters">
+<h3>Ex: Decorating Game Characters<a class="headerlink" href="#ex-decorating-game-characters" title="Permalink to this headline"></a></h3>
+<p><strong>Background</strong>
+In the world of computer games, every character has a unique skill or ability that makes them special. For example, a character might have the ability to shoot accurately, move stealthily, or hack into computers.</p>
+<p>We’re going to use Python decorators to add unique skills or abilities to game characters.</p>
+<p><strong>Task</strong>
+Create a Python decorator that adds a unique skill or ability to a game character. The decorator should be reusable, so that we can add multiple skills or abilities to a character.</p>
+<p><strong>Example</strong>
+Here’s an example of how the decorator might be used:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nd">@sharpshooter</span>
+<span class="nd">@stealthy</span>
+<span class="k">def</span> <span class="nf">player</span><span class="p">():</span>
+    <span class="k">return</span> <span class="s2">&quot;I&#39;m the player character&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">player</span><span class="p">())</span>
+</pre></div>
+</td></tr></table></div>
+<p>The output of the code should be:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">I</span><span class="s1">&#39;m the player character, the sharpshooter and stealthy character.</span>
+</pre></div>
+</div>
+<p><strong>Steps</strong>
+1. Create a decorator function that takes a function as an argument and returns a new function that adds a unique skill or ability to the character’s description.
+2. Add the decorator to the player() function to add the “sharpshooter” and “stealthy” abilities to the player character.
+3. Test your code to make sure it works as expected.</p>
+<p><strong>Bonus</strong>
+1. Create additional decorators for other skills or abilities that might be found in a computer game.
+2. Add multiple skills or abilities to a single character by stacking multiple decorators.</p>
 </div>
 </div>
 </div>
