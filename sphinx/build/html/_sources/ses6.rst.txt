@@ -198,11 +198,13 @@ The output of the code should be:
 
 
 **Steps**
+
 1. Create a decorator function that takes a function as an argument and returns a new function that adds a unique skill or ability to the character's description.
 2. Add the decorator to the player() function to add the "sharpshooter" and "stealthy" abilities to the player character.
 3. Test your code to make sure it works as expected.
 
 **Bonus**
+
 1. Create additional decorators for other skills or abilities that might be found in a computer game.
 2. Add multiple skills or abilities to a single character by stacking multiple decorators.
 
