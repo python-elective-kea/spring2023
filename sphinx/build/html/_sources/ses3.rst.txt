@@ -90,7 +90,16 @@ Ex 2: Clothes List Comprehension
         * `List & tuple exercises <exercises/lists/lists.rst>`_
 
   
-  
+----------------------------------
+Ex 3: list Comprehension exercises
+----------------------------------
+
+1. Create a list of even numbers from 0 to 20.
+2. Create a list of squares of numbers from 1 to 10.
+3. Create a list of all the vowels in a given string.
+4. Create a list of common elements in two given lists.  
+5. Create a list of words from a given string that have more than 4 letters.
+
 **Modules**
 
 -------------------------
