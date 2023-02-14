@@ -79,16 +79,15 @@ Ex 2: Clothes List Comprehension
 
         soled_out = [('Black', 'm'), ('White', 's')]
 
+ 
+..      ----------------------------
+        Ex 3: List & tuple exercises
+        ----------------------------
+        `Solution <exercises/solution/03_os_sub_req/solutions.rst#ex-3-list-tuple-exercises>`_
 
+        Based on these exercises from last time, solve the exercises by using list comprehensions instead. 
 
-----------------------------
-Ex 3: List & tuple exercises
-----------------------------
-`Solution <exercises/solution/03_os_sub_req/solutions.rst#ex-3-list-tuple-exercises>`_
-
-Based on these exercises from last time, solve the exercises by using list comprehensions instead. 
-
-* `List & tuple exercises <exercises/lists/lists.rst>`_
+        * `List & tuple exercises <exercises/lists/lists.rst>`_
 
   
   

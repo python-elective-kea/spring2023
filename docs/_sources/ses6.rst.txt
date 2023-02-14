@@ -161,9 +161,9 @@ For this you should  use the 'time' module.
 When you got the 'slowdown code' working on this recursive function, try to create a more (for you) normal function that does the countdown using a loop, and see what happens if you decorate that function with you slowdown() function.
 
 
-------------------------------
-Ex: Decorating Game Characters
-------------------------------
+-------------------------------
+Ex4: Decorating Game Characters
+-------------------------------
 
 
 
