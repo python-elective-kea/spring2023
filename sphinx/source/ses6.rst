@@ -1,13 +1,7 @@
 Session 6 - Functions &  Decorators  
 ===================================
 
-Decorators in python are widely used to add new functionallity to already existing code.
-
-.. You have already used decorators in your code. A :code:`@property` is an example of this. Here you anotate a method with 'something' to make it able to do 'more' than the method in it self can do. 
-
-You know the concept from the Spring Framework you worked with previous in your education. Here you would add some more functionality (more code) to your already existing code by anotating it with :code:`@Controler` or :code:`@Autowired`. In both cases you add extra code to your code and get some new functionality.     . 
-
-.. :code:`@property` is a python build in decorator, but today you will be making your own decorators.
+In Python, decorators are frequently used to enhance the functionality of existing code. If you've previously worked with the Spring Framework, you may be familiar with this concept. In Spring, you can add additional code to your existing code by annotating it with @Controller or @Autowired. Similarly, in Python, decorators allow you to add new functionality to your code by decorating functions or classes with additional code. This can make your code more modular and easier to maintain, as you can separate different concerns into separate decorators.
 
 The boilerplate syntax of a decorator is like this:
 
