@@ -37,8 +37,10 @@ After this week you will know about and be able to use and explain:
         - First class functions 
         - Inner functions
         - Decorator functions
+                - explain how a decorator function works
+                - understand what the return values and return types are of the different functions used in a decorator
+                - understand why we reuse the variable names in the scope.
 
-You will futhermore be able to install and use a Jupyter Notebook.
 
 Materials
 ---------
