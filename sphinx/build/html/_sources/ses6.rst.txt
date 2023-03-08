@@ -59,8 +59,61 @@ Exercises
 * :ref:`Ex1: Time it <ex1>`
 * :ref:`Ex3: Slow down code <ex3>`
 
-.. _exsm:
 
+-----------------
+Warm up exercises
+-----------------
+
+Think about the each of the following functions and determain what are the:
+
+* return value
+* return type
+* parameter type
+* parameter value
+
+
+**example1** 
+
+.. code:: python
+   :linenos:
+
+   def add():
+        pass
+
+
+**example2**
+
+.. code:: python
+   :linenos:
+
+   def add(num):
+        return num + num
+
+
+
+**example3**
+
+.. code:: python
+   :linenos:
+
+   def add(*args):
+        return sum(args)
+
+
+
+**example4**
+
+.. code:: python
+   :linenos:
+
+   def add(*args):
+        if all(type(element) == type(args[0]) for element in args):
+                return sum(args)
+        return None 
+
+
+        
+.. _exsm:
 ---------------
 Small Exercises
 ---------------
@@ -73,10 +126,7 @@ With this function as a starting point
    :linenos:
 
    def add(*args):
-        sum = 0     
-        for i in args:
-            sum += i          
-       return sum 
+       return sum(args) 
 
 1. Write a decorator that writes to a log file the time stamp of each time this function is called.
 2. Change the log decorator to also printing the values of the argument together with the timestamp.
