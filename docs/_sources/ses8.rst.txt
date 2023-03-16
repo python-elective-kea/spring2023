@@ -96,7 +96,7 @@ Write a Python class called Rectangle with width and height attributes. Add a ge
 
 Your code should include:
 
-A class called Rectangle
-width and height attributes with property decorators
-A get_area method that calculates the area of the rectangle
-Appropriate error handling for non-positive width and height values
+* A class called Rectangle
+* width and height attributes with property decorators
+* A get_area method that calculates the area of the rectangle
+* Appropriate error handling for non-positive width and height values
