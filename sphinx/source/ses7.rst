@@ -69,7 +69,7 @@ The recursing evaluation will work best with GPT4 (the paid version) but it is a
 
 .. raw:: html
 
-        I want to get a score of how well my Java programming is. The score should be from 1 to 10.
+        I want to get a score of how well my python programming is. The score should be from 1 to 10.
  
         You should give me exercises one at a time. The exercise need to be solved with code. The exercises should match the level you think i am at.
  
