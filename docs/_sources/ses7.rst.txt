@@ -1,6 +1,9 @@
 Session 7 - OOP
 ===============
 
+
+
+
 .. note:: Homework
    
    Before this class you should have read and understood this text `Object-Oriented Programming (OOP) in Python 3 <https://realpython.com/python3-object-oriented-programming/>`_. These are basic OOP concepts, which you have already woorked with in the first part of your education. You just need to be up to date with how this is done, and how the syntax is done in python.
@@ -56,7 +59,28 @@ Stick to the techniques we have covered so far.
    
    <hr>
 
+-------------------
+Ex 1a: ChatGPT Eval
+-------------------
 
+Type this in "your" ChatGpt prompt.
+The recursing evaluation will work best with GPT4 (the paid version) but it is also ok i with gpt3 (used by the free version)
+
+
+.. raw:: html
+
+        I want to get a score of how well my Java programming is. The score should be from 1 to 10.
+ 
+        You should give me exercises one at a time. The exercise need to be solved with code. The exercises should match the level you think i am at.
+ 
+        You will provide the exercise and i will give you code. For each exercise write what level you think i am at
+ 
+        When you are confident of my level generate a report. The report should contain the following
+        1. The level you think i am at
+        2. Feedback on the code i wrote
+        3. Where i should focus to improve
+ 
+        Lets start with the first question   
 
 ----------------
 Ex 2: Angry Bird
@@ -64,7 +88,7 @@ Ex 2: Angry Bird
 
 `Solution <exercises/solution/04_oop/solution.rst>`_
 
-In this exercises you are going to create a simple terminal version of this `Angry Bird online coding teaching tool for kids <https://studio.code.org/hoc/1>`_ .
+        In this exercises you are going to create a simple terminal version of this `Angry Bird online coding teaching tool for kids <https://studio.code.org/hoc/1>`_ .
 
 .. image:: _static/angry_bird.png
 
