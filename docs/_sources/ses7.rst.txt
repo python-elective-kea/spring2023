@@ -67,7 +67,7 @@ Type this in "your" ChatGpt prompt.
 The recursing evaluation will work best with GPT4 (the paid version) but it is also ok i with gpt3 (used by the free version)
 
 
-.. raw:: html
+.. code::
 
         I want to get a score of how well my python programming is. The score should be from 1 to 10.
  
