@@ -59,11 +59,11 @@ Stick to the techniques we have covered so far.
    
    <hr>
 
--------------------
-Ex 1a: ChatGPT Eval
--------------------
+-------------------------------
+Ex 1a: Python skills Evaluation
+-------------------------------
 
-Type this in "your" ChatGpt prompt.
+Copy/paste this in "your" ChatGpt prompt.
 The recursing evaluation will work best with GPT4 (the paid version) but it is also ok i with gpt3 (used by the free version)
 
 
