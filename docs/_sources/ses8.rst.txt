@@ -89,4 +89,14 @@ Ex 3: Machine -> printer
 * The printer should be able to print to console.  
 * The printer should have a papertray, which should be in its own class. The papertray class should keep track of the paper, it should have the abillity to use paper and load new paper in the tray if empty.  
 
+Ex 4: Rectangle
+***************
 
+Write a Python class called Rectangle with width and height attributes. Add a get_area method which calculates the area of the rectangle. Then add property decorators to the width and height attributes, so that they can be accessed and set like regular public attributes, but also validate that the input values are positive. If a non-positive value is assigned to either width or height, raise a ValueError with an appropriate error message.
+
+Your code should include:
+
+A class called Rectangle
+width and height attributes with property decorators
+A get_area method that calculates the area of the rectangle
+Appropriate error handling for non-positive width and height values
