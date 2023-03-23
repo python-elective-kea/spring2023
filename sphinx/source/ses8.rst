@@ -79,6 +79,33 @@ In the exercise from last monday with the bank, account and customer, change the
 * Somewhere you should change the code so that a customer only can create one account.     
 * The Customer class should make sure that the customer is over 18 year of age.
 
+
+Ex 2a: Debugging
+================
+
+What is wrong with this code?
+
+.. code:: python
+   :linenos:
+
+        class C:
+            def __init__(self, value):
+                self._x = value
+
+            @property
+            def x(self):
+                return self._x
+
+            @x.setter
+            def x(self, value):
+                if type(value) not in (int, ):
+                    self._x = value
+
+
+
+
+
+
 Ex 3: Machine -> printer
 ************************
 
