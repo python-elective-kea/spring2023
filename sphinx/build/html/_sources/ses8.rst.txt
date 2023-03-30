@@ -81,7 +81,7 @@ In the exercise from last monday with the bank, account and customer, change the
 
 
 Ex 2a: Debugging
-================
+****************
 
 What is wrong with this code?
 
