@@ -20,7 +20,6 @@ Learning goals
 --------------
 
     * Create your own classes, that behave like any other Python Object, and are able to interact with pythons build in functions or top level syntax. 
-    * Use Jupyter Notebook as code editor.  
      
 Materials
 ---------
@@ -31,7 +30,7 @@ Materials
 * `A Guide to Python's Magic Methods <https://rszalski.github.io/magicmethods/>`_
 * `Expert Python Tutorial #2 - Dunder/Magic Methods & The Python Data Model <https://www.youtube.com/watch?v=z11P9sojHuM>`_
 * `Notebook on Datamodel <notebooks/OOP_Encapsulation_Propeties.ipynb#Datamodel>`_
-* `Code examples from teachings <>`_
+* `Code examples from teachings <https://github.com/python-elective-kea/spring2023-code-examples-from-teachings/tree/master/ses9>`_
 
 Exercises
 ---------
