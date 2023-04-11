@@ -42,7 +42,6 @@ This you should do through demonstrating your knowlege, skills and competencies 
 
         * Pythonic OOP and encapsulation
         * Build in functions as an API
-        * Generators, Decorators & Context Managers
         * Decorators and properties
 
 You can get inspiration about what to talk about within each topic in your presentation `here <notebooks/exam_synopsis_template.md>`_.
