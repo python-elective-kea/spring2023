@@ -6,4 +6,4 @@ This mandatory assignment will be an assignment you should do during the 3 hours
 
 The assignment and the handin folder can be found on ´Fronter <>´_
 
-The assignment can be done from home.
+The assignment is online and can be done from home.
