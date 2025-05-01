@@ -2,7 +2,7 @@
 
 ## Elective at KEA CS 4th semester.
 
-**View Online:** https://python-elective-kea.github.io/fall2022/
+**View Online:** https://python-elective-kea.github.io/spring2023/
 
 Or **view local** by cloning this repository
 
